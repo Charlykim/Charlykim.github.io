@@ -20,7 +20,9 @@
 			"name": "Aeorian Absorber",
 			"source": "EGW",
 			"page": 283,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -116,7 +118,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance",
 				"Pounce"
@@ -143,6 +144,7 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -150,7 +152,9 @@
 			"name": "Aeorian Nullifier",
 			"source": "EGW",
 			"page": 283,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -262,7 +266,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -288,6 +291,12 @@
 				"MW",
 				"RCH"
 			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"stunned"
+			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -295,7 +304,9 @@
 			"name": "Aeorian Reverser",
 			"source": "EGW",
 			"page": 284,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -380,7 +391,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -402,6 +412,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -422,11 +433,11 @@
 				"Common",
 				"Yeti"
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"OTH"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -446,11 +457,11 @@
 				"Common",
 				"Yeti"
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"OTH"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Animated Knife",
@@ -477,16 +488,18 @@
 					}
 				}
 			},
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"hp": {
 				"average": 12,
 				"formula": "5d4"
 			},
 			"cr": "1/8",
-			"hasToken": true,
 			"damageTags": [
 				"P"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Animated Tree",
@@ -527,7 +540,9 @@
 			"name": "Blood Hunter",
 			"source": "EGW",
 			"page": 284,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -581,10 +596,10 @@
 					"headerEntries": [
 						"The blood hunter can innately cast {@spell hex}. Its innate spellcasting ability is Intelligence."
 					],
-					"ability": "int",
 					"will": [
 						"{@spell hex}"
 					],
+					"ability": "int",
 					"hidden": [
 						"will"
 					]
@@ -630,7 +645,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -649,6 +663,9 @@
 				"P",
 				"S"
 			],
+			"damageTagsSpell": [
+				"N"
+			],
 			"spellcastingTags": [
 				"I"
 			],
@@ -657,15 +674,19 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Bol'bara",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 261,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -778,17 +799,16 @@
 				{
 					"name": "Incorporeal Dash",
 					"entries": [
-						"Bol'bara moves up to her speed. She can move through other creatures and objects as if they were difficult terrain. She takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object."
+						"Bol'bara moves up to her speed. She can move through other creatures and objects as if they were {@quickref difficult terrain||3}. She takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object."
 					]
 				},
 				{
 					"name": "Zone of Calamity (Costs 2 Actions)",
 					"entries": [
-						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains concentration, up to 1 minute (as if concentrating on a spell)."
+						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains {@status concentration}, up to 1 minute (as if {@status concentration||concentrating} on a spell)."
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -803,6 +823,10 @@
 				"O",
 				"P"
 			],
+			"damageTagsSpell": [
+				"N",
+				"O"
+			],
 			"spellcastingTags": [
 				"I"
 			],
@@ -811,13 +835,22 @@
 				"MW",
 				"RW",
 				"THW"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Bristled Moorbounder",
 			"source": "EGW",
 			"page": 295,
-			"size": "L",
+			"otherSources": [
+				{
+					"source": "CRCotN",
+					"page": 295
+				}
+			],
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -882,7 +915,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -896,13 +928,16 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Core Spawn Crawler",
 			"source": "EGW",
 			"page": 286,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -976,7 +1011,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -1002,6 +1036,7 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1009,7 +1044,9 @@
 			"name": "Core Spawn Emissary",
 			"source": "EGW",
 			"page": 286,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -1087,7 +1124,7 @@
 					]
 				},
 				{
-					"name": "Alluring Thrum (Recharges 5-6)",
+					"name": "Alluring Thrum {@recharge 5}",
 					"entries": [
 						"The emissary emits a dreadful yet alluring hum. Each creature within 20 feet of the emissary that can hear it and that isn't an aberration must succeed on a {@dc 14} Constitution saving throw or be {@condition charmed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
@@ -1099,7 +1136,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -1127,6 +1163,7 @@
 				"charmed",
 				"poisoned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1134,7 +1171,9 @@
 			"name": "Core Spawn Seer",
 			"source": "EGW",
 			"page": 286,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -1231,7 +1270,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -1259,6 +1297,7 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1266,7 +1305,9 @@
 			"name": "Core Spawn Worm",
 			"source": "EGW",
 			"page": 287,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -1362,9 +1403,9 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
-				"Illumination"
+				"Illumination",
+				"Tunneler"
 			],
 			"senseTags": [
 				"B",
@@ -1392,6 +1433,7 @@
 				"grappled",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1414,12 +1456,13 @@
 				"formula": "11d8 + 44"
 			},
 			"cr": "1",
-			"hasToken": true,
-			"actionTags": []
+			"actionTags": [],
+			"hasToken": true
 		},
 		{
 			"name": "Ferol Sal",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 249,
 			"_copy": {
@@ -1441,7 +1484,9 @@
 			"name": "Frost Giant Zombie",
 			"source": "EGW",
 			"page": 288,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -1526,7 +1571,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -1553,6 +1597,7 @@
 			"conditionInflict": [
 				"paralyzed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1560,7 +1605,9 @@
 			"name": "Frost Worm",
 			"source": "EGW",
 			"page": 289,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -1644,9 +1691,9 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
-				"Death Burst"
+				"Death Burst",
+				"Tunneler"
 			],
 			"senseTags": [
 				"B",
@@ -1670,6 +1717,7 @@
 				"restrained",
 				"stunned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1677,7 +1725,9 @@
 			"name": "Gearkeeper Construct",
 			"source": "EGW",
 			"page": 290,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -1781,7 +1831,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Immutable Form"
 			],
@@ -1807,6 +1856,7 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1814,7 +1864,15 @@
 			"name": "Gloomstalker",
 			"source": "EGW",
 			"page": 291,
-			"size": "L",
+			"otherSources": [
+				{
+					"source": "CRCotN",
+					"page": 291
+				}
+			],
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -1909,7 +1967,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -1936,6 +1993,7 @@
 				"paralyzed",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1943,7 +2001,9 @@
 			"name": "Guardian Wolf",
 			"source": "EGW",
 			"page": 272,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -2013,7 +2073,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Keen Senses",
 				"Pack Tactics"
@@ -2033,13 +2092,22 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Horizonback Tortoise",
 			"source": "EGW",
 			"page": 292,
-			"size": "G",
+			"otherSources": [
+				{
+					"source": "CRCotN",
+					"page": 292
+				}
+			],
+			"size": [
+				"G"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -2086,7 +2154,7 @@
 			"languages": [
 				"understands Goblin but can't speak"
 			],
-			"cr": "7",
+			"cr": "8",
 			"trait": [
 				{
 					"name": "Amphibious",
@@ -2116,7 +2184,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious"
 			],
@@ -2138,12 +2205,14 @@
 				"prone",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Hulil Lutan",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -2175,7 +2244,9 @@
 			"name": "Husk Zombie",
 			"source": "EGW",
 			"page": 293,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -2253,13 +2324,16 @@
 							"type": "entries",
 							"name": "Burst",
 							"entries": [
-								"The zombie explodes and is destroyed. Each creature within 5 feet of it must make a DC 12 Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a husk zombie after 1 minute."
+								"The zombie explodes and is destroyed. Each creature within 5 feet of it must make a DC 12 Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a {@creature husk zombie|EGW} after 1 minute."
 							]
 						}
-					]
+					],
+					"_version": {
+						"name": "Husk Zombie Burster",
+						"addHeadersAs": "action"
+					}
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -2280,12 +2354,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Ishel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 231,
 			"_copy": {
@@ -2318,7 +2394,7 @@
 				"name": "Ancient Silver Dragon",
 				"source": "MM",
 				"_trait": {
-					"name": "Shadow Dragon",
+					"name": "Legendary Shadow Dragon",
 					"source": "MM"
 				}
 			},
@@ -2331,13 +2407,17 @@
 				"N",
 				"P",
 				"S"
-			]
+			],
+			"damageTagsLegendary": [],
+			"hasToken": true
 		},
 		{
 			"name": "Kobold Underling",
 			"source": "EGW",
 			"page": 221,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2407,7 +2487,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -2428,13 +2507,16 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Merrow Shallowpriest",
 			"source": "EGW",
 			"page": 294,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -2535,7 +2617,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious"
 			],
@@ -2550,6 +2631,10 @@
 				"L",
 				"P"
 			],
+			"damageTagsSpell": [
+				"L",
+				"T"
+			],
 			"spellcastingTags": [
 				"CD"
 			],
@@ -2557,6 +2642,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2564,7 +2650,15 @@
 			"name": "Moorbounder",
 			"source": "EGW",
 			"page": 295,
-			"size": "L",
+			"otherSources": [
+				{
+					"source": "CRCotN",
+					"page": 295
+				}
+			],
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -2611,7 +2705,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -2621,12 +2714,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Mossback Steward",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 256,
 			"_copy": {
@@ -2671,7 +2766,6 @@
 					}
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"GO",
@@ -2681,13 +2775,17 @@
 			"spellcastingTags": [
 				"I"
 			],
-			"hasFluff": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Nergaliid",
 			"source": "EGW",
 			"page": 296,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -2786,7 +2884,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"SD"
 			],
@@ -2806,12 +2903,14 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Ogre Lord Buhfal II",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 251,
 			"_copy": {
@@ -2837,6 +2936,7 @@
 		{
 			"name": "Old Croaker",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -2885,11 +2985,14 @@
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
-			]
+			],
+			"damageTagsLegendary": [],
+			"hasToken": true
 		},
 		{
 			"name": "Parson Pellinost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 261,
 			"_copy": {
@@ -2944,12 +3047,17 @@
 					"ability": "wis"
 				}
 			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Raegrin Mau",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -2968,16 +3076,18 @@
 					}
 				}
 			},
-			"hasToken": true,
 			"traitTags": [
 				"Fey Ancestry"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Sahuagin Warlock of Uk'otoa",
 			"source": "EGW",
 			"page": 297,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -3108,7 +3218,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"SD"
 			],
@@ -3125,6 +3234,12 @@
 				"P",
 				"S"
 			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"N",
+				"O"
+			],
 			"spellcastingTags": [
 				"CL",
 				"I"
@@ -3140,15 +3255,48 @@
 				"charmed",
 				"invisible"
 			],
+			"hasToken": true,
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Sahuagin Warlock of Uk'otoa (Rod of Retribution)",
+					"source": "EGW",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Special Equipment",
+								"entries": [
+									"The warlock carries a {@item rod of retribution|egw}."
+								]
+							}
+						},
+						"reaction": {
+							"mode": "appendArr",
+							"items": {
+								"type": "entries",
+								"name": "Retribution (3/Day)",
+								"entries": [
+									"When a creature the warlock can see within 60 feet of it damages the warlock, the creature must make a {@dc 13} Dexterity saving throw, taking 11 ({@damage 2d10}) lightning damage on a failed save, or half as much damage on a successful one."
+								]
+							}
+						}
+					},
+					"variant": null
+				}
+			]
 		},
 		{
 			"name": "Sea Fury",
-			"group": "Hags",
+			"group": [
+				"Hags"
+			],
 			"source": "EGW",
 			"page": 299,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"C",
@@ -3288,7 +3436,7 @@
 				{
 					"name": "Conjure Snakes (Costs 3 Actions)",
 					"entries": [
-						"The sea fury disgorges a swarm of poisonous snakes, which occupies the same space as the sea fury, acts on its own initiative count, and attacks as directed by the sea fury. The sea fury can control up to three of these swarms at a time."
+						"The sea fury disgorges a {@creature swarm of poisonous snakes}, which occupies the same space as the sea fury, acts on its own initiative count, and attacks as directed by the sea fury. The sea fury can control up to three of these swarms at a time."
 					]
 				}
 			],
@@ -3296,7 +3444,6 @@
 				"name": "Sea Fury",
 				"source": "EGW"
 			},
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious",
 				"Legendary Resistances",
@@ -3316,6 +3463,11 @@
 			"damageTags": [
 				"S"
 			],
+			"damageTagsSpell": [
+				"L",
+				"N",
+				"T"
+			],
 			"spellcastingTags": [
 				"I"
 			],
@@ -3328,6 +3480,7 @@
 			"conditionInflictSpell": [
 				"frightened"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3335,7 +3488,9 @@
 			"name": "Shadowghast",
 			"source": "EGW",
 			"page": 299,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -3411,7 +3566,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -3429,6 +3583,7 @@
 				"paralyzed",
 				"poisoned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3467,9 +3622,12 @@
 		{
 			"name": "Sken Zabriss",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 221,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -3519,7 +3677,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sken wears a ring of obscuring. With it, she can cast the fog cloud spell centered on herself three times per day. The cloud lasts for 1 minute (no concentration required)."
+						"Sken wears a ring of obscuring. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no {@status concentration} required)."
 					]
 				}
 			],
@@ -3539,7 +3697,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"DR",
@@ -3550,11 +3707,13 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Skr'a S'orsk",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 254,
 			"_copy": {
@@ -3637,7 +3796,9 @@
 			"name": "Swavain Basilisk",
 			"source": "EGW",
 			"page": 300,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -3709,7 +3870,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious"
 			],
@@ -3733,12 +3893,14 @@
 				"petrified",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Three Earrings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 211,
 			"_copy": {
@@ -3767,7 +3929,9 @@
 			"name": "Udaak",
 			"source": "EGW",
 			"page": 301,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "fiend",
 			"alignment": [
 				"N",
@@ -3865,7 +4029,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Charge",
 				"Siege Monster"
@@ -3892,6 +4055,7 @@
 				"prone",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3899,7 +4063,9 @@
 			"name": "Vox Seeker",
 			"source": "EGW",
 			"page": 270,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -3967,7 +4133,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Spider Climb"
 			],
@@ -3980,14 +4145,18 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Yinra Emberwind",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 223,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4061,7 +4230,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Fey Ancestry",
 				"Keen Senses"
@@ -4080,7 +4248,8 @@
 				"MW",
 				"RNG",
 				"RW"
-			]
+			],
+			"hasToken": true
 		}
 	]
 }

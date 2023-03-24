@@ -1,14 +1,11 @@
 "use strict";
 
-if (typeof module !== "undefined") {
-	const cv = require("./converterutils.js");
-	Object.assign(global, cv);
-	const cvSpells = require("./converterutils-spell.js");
-	Object.assign(global, cvSpells);
-	global.PropOrder = require("./utils-proporder.js");
-}
-
 class SpellParser extends BaseParser {
+	static _RE_START_RANGE = "Range";
+	static _RE_START_COMPONENTS = "Components?";
+	static _RE_START_DURATION = "Duration";
+	static _RE_START_CLASS = "Class(?:es)?";
+
 	/**
 	 * Parses spells from raw text pastes
 	 * @param inText Input text.
@@ -24,40 +21,8 @@ class SpellParser extends BaseParser {
 	static doParseText (inText, options) {
 		options = this._getValidOptions(options);
 
-		/**
-		 * If the current line ends in a comma, we can assume the next line is a broken/wrapped part of the current line
-		 */
-		function absorbBrokenLine () {
-			const NO_ABSORB_SUBTITLES = [
-				"CASTING TIME",
-				"RANGE",
-				"COMPONENTS",
-				"DURATION",
-			];
-
-			if (curLine) {
-				if (curLine.trim().endsWith(",")) {
-					const nxtLine = toConvert[++i];
-					if (!nxtLine) return false;
-					curLine = `${curLine.trim()} ${nxtLine.trim()}`;
-					return true;
-				}
-
-				const nxtLine = toConvert[i + 1];
-				if (!nxtLine) return false;
-
-				if (ConvertUtil.isNameLine(nxtLine)) return false; // avoid absorbing the start of traits
-				if (NO_ABSORB_SUBTITLES.some(it => nxtLine.toUpperCase().startsWith(it))) return false;
-
-				i++;
-				curLine = `${curLine.trim()} ${nxtLine.trim()}`;
-				return true;
-			}
-			return false;
-		}
-
 		if (!inText || !inText.trim()) return options.cbWarning("No input!");
-		const toConvert = this._getCleanInput(inText)
+		const toConvert = this._getCleanInput(inText, options)
 			.split("\n")
 			.filter(it => it && it.trim());
 		const spell = {};
@@ -93,30 +58,28 @@ class SpellParser extends BaseParser {
 			}
 
 			// range
-			if (!curLine.indexOf_handleColon("Range")) {
-				// noinspection StatementWithEmptyBodyJS
-				while (absorbBrokenLine(true)) ;
+			if (ConvertUtil.isStatblockLineHeaderStart({reStartStr: this._RE_START_RANGE, line: curLine})) {
 				this._setCleanRange(spell, curLine, options);
 				continue;
 			}
 
 			// components
-			if (!curLine.indexOf_handleColon("Components")) {
-				// noinspection StatementWithEmptyBodyJS
-				while (absorbBrokenLine(true)) ;
+			if (
+				ConvertUtil.isStatblockLineHeaderStart({reStartStr: this._RE_START_COMPONENTS, line: curLine})
+			) {
 				this._setCleanComponents(spell, curLine, options);
 				continue;
 			}
 
 			// duration
-			if (!curLine.indexOf_handleColon("Duration")) {
+			if (ConvertUtil.isStatblockLineHeaderStart({reStartStr: this._RE_START_DURATION, line: curLine})) {
 				// avoid absorbing main body text
 				this._setCleanDuration(spell, curLine, options);
 				continue;
 			}
 
 			// class spell lists (alt)
-			if (!curLine.indexOf_handleColon("Classes")) {
+			if (ConvertUtil.isStatblockLineHeaderStart({reStartStr: this._RE_START_CLASS, line: curLine})) {
 				// avoid absorbing main body text
 				this._setCleanClasses(spell, curLine, options);
 				continue;
@@ -127,7 +90,7 @@ class SpellParser extends BaseParser {
 				ptrI,
 				toConvert,
 				{
-					fnStop: (curLine) => /^(?:At Higher Levels|Classes)/gi.test(curLine),
+					fnStop: (curLine) => /^(?:At Higher Levels|Class(?:es)?)/gi.test(curLine),
 				},
 			);
 			i = ptrI._;
@@ -144,7 +107,7 @@ class SpellParser extends BaseParser {
 			// class spell lists
 			if (i < toConvert.length) {
 				curLine = toConvert[i].trim();
-				if (!curLine.indexOf_handleColon("Classes")) {
+				if (ConvertUtil.isStatblockLineHeaderStart({reStartStr: this._RE_START_CLASS, line: curLine})) {
 					this._setCleanClasses(spell, curLine, options);
 				}
 			}
@@ -157,14 +120,40 @@ class SpellParser extends BaseParser {
 		options.cbOutput(statsOut, options.isAppend);
 	}
 
+	static _getCleanInput (ipt, options = null) {
+		let txt = super._getCleanInput(ipt, options);
+
+		const titles = [
+			"Casting Time",
+			"Range",
+			"Components?",
+			"Duration",
+		];
+
+		for (let i = 0; i < titles.length - 1; ++i) {
+			const start = titles[i];
+			const end = titles[i + 1];
+			const re = new RegExp(`(?<line>\\n${start}.*?)(?<suffix>\\n${end})`, "is");
+
+			txt = txt.replace(re, (...m) => {
+				return `\n${m.last().line.replace(/\n/g, " ").trim().replace(/ +/g, " ")}${m.last().suffix}`;
+			});
+		}
+
+		return txt;
+	}
+
 	// SHARED UTILITY FUNCTIONS ////////////////////////////////////////////////////////////////////////////////////////
 	static _tryConvertSchool (s, cbMan) {
 		const school = (s.school || "").toLowerCase().trim();
 		if (!school) return cbMan ? cbMan(s.school, "Spell school requires manual conversion") : null;
 
 		const out = SpellParser._RES_SCHOOL.find(it => it.regex.test(school));
-		if (out) s.school = out.output;
-		else cbMan(s.school, "Spell school requires manual conversion");
+		if (out) {
+			s.school = out.output;
+			return;
+		}
+		if (cbMan) cbMan(s.school, "Spell school requires manual conversion");
 	}
 
 	static _doSpellPostProcess (stats, options) {
@@ -176,7 +165,7 @@ class SpellParser extends BaseParser {
 				}
 			});
 		};
-		TagCondition.tryTagConditions(stats, true);
+		TagCondition.tryTagConditions(stats, {isTagInflicted: true});
 		if (stats.entries) {
 			stats.entries = stats.entries.map(it => DiceConvert.getTaggedEntry(it));
 			EntryConvert.tryRun(stats, "entries");
@@ -185,7 +174,7 @@ class SpellParser extends BaseParser {
 			stats.entries = SenseTag.tryRun(stats.entries);
 		}
 		if (stats.entriesHigherLevel) {
-			stats.entriesHigherLevel = stats.entriesHigherLevel.map(it => DiceConvert.getTaggedEntry(it))
+			stats.entriesHigherLevel = stats.entriesHigherLevel.map(it => DiceConvert.getTaggedEntry(it));
 			EntryConvert.tryRun(stats, "entriesHigherLevel");
 			stats.entriesHigherLevel = SkillTag.tryRun(stats.entriesHigherLevel);
 			stats.entriesHigherLevel = ActionTag.tryRun(stats.entriesHigherLevel);
@@ -215,7 +204,7 @@ class SpellParser extends BaseParser {
 		line = ConvertUtil.cleanDashes(line).toLowerCase().trim();
 
 		const mCantrip = /cantrip/i.exec(line);
-		const mSpellLevel = /^(\d+)(?:st|nd|rd|th)-level/i.exec(line);
+		const mSpellLevel = /^(\d+)(?:st|nd|rd|th)?-level/i.exec(line);
 
 		if (mCantrip) {
 			const trailing = line.slice(mCantrip.index + "cantrip".length, line.length);
@@ -231,7 +220,7 @@ class SpellParser extends BaseParser {
 
 			this._tryConvertSchool(stats);
 		} else if (mSpellLevel) {
-			line = line.slice(mSpellLevel.index + mSpellLevel[1].length);
+			line = line.slice(mSpellLevel.index + mSpellLevel[0].length);
 
 			let isRitual = false;
 			line = line.replace(/\((.*?)(?:[,;]\s*)?ritual(?:[,;]\s*)?(.*?)\)/i, (...m) => {
@@ -259,7 +248,7 @@ class SpellParser extends BaseParser {
 	static _setCleanRange (stats, line, options) {
 		const getUnit = (str) => str.toLowerCase().includes("mile") ? "miles" : "feet";
 
-		const range = ConvertUtil.cleanDashes(line.split_handleColon("Range", 1)[1].trim());
+		const range = ConvertUtil.cleanDashes(ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_RANGE, line}));
 
 		if (range.toLowerCase() === "self") return stats.range = {type: "point", distance: {type: "self"}};
 		if (range.toLowerCase() === "special") return stats.range = {type: "special"};
@@ -291,6 +280,11 @@ class SpellParser extends BaseParser {
 		const mSelfHemisphere = /^self \((\d+)-(foot|mile)-radius hemisphere\)$/i.exec(cleanRange);
 		if (mSelfHemisphere) return stats.range = {type: "hemisphere", distance: {type: getUnit(mSelfHemisphere[2]), amount: Number(mSelfHemisphere[1])}};
 
+		// region Homebrew
+		const mPointCube = /^(?<point>\d+) (?<unit>feet|foot|miles?) \((\d+)-(foot|mile) cube\)$/i.exec(cleanRange);
+		if (mPointCube) return stats.range = {type: "point", distance: {type: getUnit(mPointCube.groups.unit), amount: Number(mPointCube.groups.point)}};
+		// endregion
+
 		options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Range part "${range}" requires manual conversion`);
 	}
 
@@ -321,8 +315,8 @@ class SpellParser extends BaseParser {
 	}
 
 	static _setCleanCastingTime (stats, line, options) {
-		const allParts = line.split_handleColon("Casting Time", 1)[1].trim();
-		const parts = allParts.toLowerCase().includes("reaction")
+		const allParts = ConvertUtil.getStatblockLineHeaderText({reStartStr: "Casting Time", line});
+		const parts = /\b(?:reaction|which you (?:take|use))\b/.test(allParts)
 			? [allParts]
 			: allParts.split(/; | or /gi);
 
@@ -330,17 +324,17 @@ class SpellParser extends BaseParser {
 			.map(it => it.trim())
 			.filter(Boolean)
 			.map(str => {
-				const mNumber = /^(\d+)(.*?)$/.exec(str);
+				const mNumber = /^(?<count>\d+)?(?<rest>.*?)$/.exec(str);
 
 				if (!mNumber) {
 					options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Casting time part "${str}" requires manual conversion`);
 					return str;
 				}
 
-				const amount = Number(mNumber[1].trim());
-				const [unit, ...conditionParts] = mNumber[2].split(", ");
+				const amount = mNumber.groups.count ? Number(mNumber.groups.count.trim()) : null;
+				const [unit, ...conditionParts] = mNumber.groups.rest.split(", ");
 				const out = {
-					number: amount,
+					number: amount ?? 1,
 					unit: this._getCleanTimeUnit(unit, false, options),
 					condition: conditionParts.join(", "),
 				};
@@ -351,7 +345,7 @@ class SpellParser extends BaseParser {
 	}
 
 	static _setCleanComponents (stats, line, options) {
-		const components = line.split_handleColon("Components", 1)[1].trim();
+		const components = ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_COMPONENTS, line});
 		const parts = components.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX);
 
 		stats.components = {};
@@ -395,7 +389,7 @@ class SpellParser extends BaseParser {
 	}
 
 	static _setCleanDuration (stats, line, options) {
-		const dur = line.split_handleColon("Duration", 1)[1].trim();
+		const dur = ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_DURATION, line});
 
 		if (dur.toLowerCase() === "instantaneous") return stats.duration = [{type: "instant"}];
 		if (dur.toLowerCase() === "instantaneous (see text)") return stats.duration = [{type: "instant", condition: "see text"}];
@@ -433,7 +427,7 @@ class SpellParser extends BaseParser {
 	}
 
 	static _setCleanClasses (stats, line, options) {
-		const classLine = line.split_handleColon("Classes", 1)[1].trim();
+		const classLine = ConvertUtil.getStatblockLineHeaderText({reStartStr: this._RE_START_CLASS, line});
 		const classes = classLine.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX);
 
 		stats.classes = {fromClassList: []};
@@ -491,8 +485,4 @@ Object.entries({
 	});
 });
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		SpellParser,
-	};
-}
+globalThis.SpellParser = SpellParser;

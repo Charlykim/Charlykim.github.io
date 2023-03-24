@@ -2,9 +2,9 @@
 	"_meta": {
 		"otherSources": {
 			"monster": {
-				"MM": "DC",
-				"MTF": "DC",
-				"VGM": "DC"
+				"MM": "DIP",
+				"MTF": "DIP",
+				"VGM": "DIP"
 			}
 		}
 	},
@@ -21,7 +21,9 @@
 					"source": "SDW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -110,7 +112,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Shapechanger"
 			],
@@ -124,21 +125,29 @@
 			"damageTags": [
 				"S"
 			],
+			"damageTagsSpell": [
+				"L",
+				"T"
+			],
 			"spellcastingTags": [
 				"I"
 			],
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Don-Jon Raskin",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "DIP",
 			"page": 56,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -212,7 +221,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -230,15 +238,19 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Falcon the Hunter",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "DIP",
 			"page": 56,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -253,7 +265,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item studded leather armor|phb|studded leather}"
 					]
 				}
 			],
@@ -318,7 +330,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -334,15 +345,19 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Gorthok the Thunder Boar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "DIP",
 			"page": 58,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -423,7 +438,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -440,6 +454,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -447,7 +462,9 @@
 			"name": "Rock Gnome Recluse",
 			"source": "DIP",
 			"page": 62,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -541,7 +558,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -553,10 +569,16 @@
 				"C",
 				"O"
 			],
+			"damageTagsSpell": [
+				"C",
+				"O"
+			],
 			"spellcastingTags": [
 				"CW"
 			],
-			"hasFluff": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }

@@ -22,7 +22,9 @@
 			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 209,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -264,7 +266,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Legendary Resistances",
 				"Rejuvenation",
@@ -289,6 +290,15 @@
 				"C",
 				"N"
 			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"I",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
 			"spellcastingTags": [
 				"CW"
 			],
@@ -304,6 +314,7 @@
 				"paralyzed",
 				"poisoned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -311,7 +322,9 @@
 			"name": "Albino Dwarf Spirit Warrior",
 			"source": "ToA",
 			"page": 210,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -393,7 +406,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -412,6 +424,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -419,7 +432,9 @@
 			"name": "Albino Dwarf Warrior",
 			"source": "ToA",
 			"page": 210,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -483,7 +498,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -499,6 +513,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -506,7 +521,9 @@
 			"name": "Aldani (Lobsterfolk)",
 			"source": "ToA",
 			"page": 210,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -568,7 +585,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious"
 			],
@@ -590,6 +606,7 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -597,7 +614,9 @@
 			"name": "Almiraj",
 			"source": "ToA",
 			"page": 211,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -650,7 +669,6 @@
 				}
 			],
 			"familiar": true,
-			"hasToken": true,
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -663,6 +681,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -670,7 +689,9 @@
 			"name": "Ankylosaurus Zombie",
 			"source": "ToA",
 			"page": 240,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "undead",
 			"alignment": [
 				"U"
@@ -723,7 +744,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -740,14 +760,18 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Artus Cimber",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 212,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -762,7 +786,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item studded leather armor|phb|studded leather}"
 					]
 				}
 			],
@@ -857,7 +881,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -876,15 +899,19 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Asharra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 69,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -996,11 +1023,10 @@
 				{
 					"name": "Summon Air Elemental",
 					"entries": [
-						"Five aarakocra within 30 feet of each other can magically summon an {@creature air elemental}. Each of the five must use its action and movement on three consecutive turns to perform an aerial dance and must maintain concentration while doing so (as if concentrating on a spell). When all five have finished their third turn of the dance, the elemental appears in an unoccupied space within 60 feet of them. It is friendly toward them and obeys their spoken commands. It remains for 1 hour, until it or all its summoners die, or until any of its summoners dismisses it as a bonus action. A summoner can't perform the dance again until it finishes a short rest. When the elemental returns to the Elemental Plane of Air, any aarakocra within 5 feet of it can return with it."
+						"Five aarakocra within 30 feet of each other can magically summon an {@creature air elemental}. Each of the five must use its action and movement on three consecutive turns to perform an aerial dance and must maintain {@status concentration} while doing so (as if {@status concentration||concentrating} on a spell). When all five have finished their third turn of the dance, the elemental appears in an unoccupied space within 60 feet of them. It is friendly toward them and obeys their spoken commands. It remains for 1 hour, until it or all its summoners die, or until any of its summoners dismisses it as a bonus action. A summoner can't perform the dance again until it finishes a short rest. When the elemental returns to the Elemental Plane of Air, any aarakocra within 5 feet of it can return with it."
 					]
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"AU",
 				"C"
@@ -1008,6 +1034,12 @@
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"L",
+				"T"
 			],
 			"spellcastingTags": [
 				"CD"
@@ -1017,6 +1049,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1032,7 +1065,9 @@
 					"source": "SDW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -1092,11 +1127,10 @@
 				{
 					"name": "Entangling Vines",
 					"entries": [
-						"The assassin vine can animate normal vines and roots on the ground in a 15-foot square within 30 feet of it. These plants turn the ground in that area into difficult terrain. A creature in that area when the effect begins must succeed on a {@dc 13} Strength saving throw or be {@condition restrained} by entangling vines and roots. A creature {@condition restrained} by the plants can use its action to make a {@dc 13} Strength (Athletics) check, freeing itself on a successful check. The effect ends after 1 minute or when the assassin vine dies or uses Entangling Vines again."
+						"The assassin vine can animate normal vines and roots on the ground in a 15-foot square within 30 feet of it. These plants turn the ground in that area into {@quickref difficult terrain||3}. A creature in that area when the effect begins must succeed on a {@dc 13} Strength saving throw or be {@condition restrained} by entangling vines and roots. A creature {@condition restrained} by the plants can use its action to make a {@dc 13} Strength (Athletics) check, freeing itself on a successful check. The effect ends after 1 minute or when the assassin vine dies or uses Entangling Vines again."
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"False Appearance"
 			],
@@ -1115,13 +1149,17 @@
 				"grappled",
 				"restrained"
 			],
-			"hasFluff": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Atropal",
 			"source": "ToA",
 			"page": 214,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -1254,7 +1292,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance",
 				"Turn Resistance"
@@ -1276,12 +1313,14 @@
 			"conditionInflict": [
 				"exhaustion"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Azaka Stormfang",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 33,
 			"_copy": {
@@ -1305,9 +1344,12 @@
 		{
 			"name": "Bag of Nails",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 102,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -1322,7 +1364,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item studded leather armor|phb|studded leather}"
 					]
 				}
 			],
@@ -1373,7 +1415,7 @@
 				{
 					"name": "Assassinate",
 					"entries": [
-						"During his first turn, Bag of Nails has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Bag of Nails scores against a surprised creature is a critical hit."
+						"During his first turn, Bag of Nails has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Bag of Nails scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
 					]
 				},
 				{
@@ -1415,7 +1457,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -1440,6 +1481,7 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1468,14 +1510,16 @@
 			],
 			"cr": "0",
 			"action": null,
-			"hasToken": true,
 			"senseTags": [
 				"B"
-			]
+			],
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Bosco Daggerhand",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 68,
 			"_copy": {
@@ -1515,7 +1559,9 @@
 			"name": "Chwinga",
 			"source": "ToA",
 			"page": 216,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -1587,17 +1633,20 @@
 				{
 					"name": "Natural Shelter",
 					"entries": [
-						"The chwinga magically takes shelter inside a rock, a living plant, or a natural source of fresh water in its space. The chwinga can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the chwinga's blindsight. The chwinga can use it's action to emerge from a shelter. If its shelter is destroyed, the chwinga is forced out and appears in the shelter's space, but is otherwise unharmed."
+						"The chwinga magically takes shelter inside a rock, a living plant, or a natural source of fresh water in its space. The chwinga can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the chwinga's blindsight. The chwinga can use its action to emerge from a shelter. If its shelter is destroyed, the chwinga is forced out and appears in the shelter's space, but is otherwise unharmed."
 					]
 				}
 			],
-			"hasToken": true,
+			"traitTags": [
+				"Unusual Nature"
+			],
 			"senseTags": [
 				"B"
 			],
 			"spellcastingTags": [
 				"I"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1605,7 +1654,9 @@
 			"name": "Clay Gladiator",
 			"source": "ToA",
 			"page": 100,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -1700,7 +1751,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Brute"
 			],
@@ -1718,14 +1768,18 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Dragonbait",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 218,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -1781,7 +1835,7 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"While holding his holy avenger, Dragonbait creates an aura in a 10-foot radius around him. While this aura is active, Dragonbait and all creatures friendly to him in the aura have advantage on saving throws against spells and other magical effects."
+						"While holding his {@item holy avenger longsword||holy avenger longsword}, Dragonbait creates an aura in a 10-foot radius around him. While this aura is active, Dragonbait and all creatures friendly to him in the aura have advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -1805,7 +1859,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -1824,12 +1877,14 @@
 				"AOE",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Drufi",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 64,
 			"_copy": {
@@ -1854,7 +1909,9 @@
 			"name": "Eblis",
 			"source": "ToA",
 			"page": 219,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -1916,7 +1973,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1933,12 +1989,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Ekene-Afa",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 25,
 			"_copy": {
@@ -1963,11 +2021,13 @@
 				"L",
 				"G"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Eku",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 34,
 			"_copy": {
@@ -1987,6 +2047,7 @@
 		{
 			"name": "Elok Jaharwon",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 67,
 			"_copy": {
@@ -2011,6 +2072,7 @@
 		{
 			"name": "Faroul",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 34,
 			"_copy": {
@@ -2040,6 +2102,7 @@
 		{
 			"name": "Fenthaza",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 113,
 			"_copy": {
@@ -2054,11 +2117,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flask of Wine",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -2079,7 +2144,9 @@
 			"name": "Flying Monkey",
 			"source": "ToA",
 			"page": 220,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -2127,7 +2194,6 @@
 				}
 			],
 			"familiar": true,
-			"hasToken": true,
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -2137,6 +2203,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2144,7 +2211,9 @@
 			"name": "Giant Four-Armed Gargoyle",
 			"source": "ToA",
 			"page": 221,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"C",
@@ -2233,7 +2302,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"False Appearance"
 			],
@@ -2253,6 +2321,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2260,7 +2329,9 @@
 			"name": "Giant Snapping Turtle",
 			"source": "ToA",
 			"page": 222,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -2318,7 +2389,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Amphibious"
 			],
@@ -2331,13 +2401,16 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Girallon Zombie",
 			"source": "ToA",
 			"page": 240,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -2410,7 +2483,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Aggressive",
 				"Undead Fortitude"
@@ -2428,12 +2500,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Gondolo",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 34,
 			"_copy": {
@@ -2460,16 +2534,17 @@
 				"average": 13,
 				"formula": "3d6 + 3"
 			},
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"H",
 				"X"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Grabstab",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 89,
 			"_copy": {
@@ -2484,11 +2559,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Grandfather Zitembe",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 20,
 			"_copy": {
@@ -2518,9 +2595,12 @@
 		{
 			"name": "Hew Hackinstone",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 33,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2588,7 +2668,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Reckless"
 			],
@@ -2605,12 +2684,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Ifan Talro'a",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 25,
 			"_copy": {
@@ -2635,13 +2716,16 @@
 				"N",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Jaculi",
 			"source": "ToA",
 			"page": 225,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -2706,7 +2790,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -2719,12 +2802,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Jessamine",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 26,
 			"_copy": {
@@ -2748,11 +2833,13 @@
 			"alignment": [
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Jobal",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 26,
 			"_copy": {
@@ -2777,13 +2864,16 @@
 				"N",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Kamadan",
 			"source": "ToA",
 			"page": 225,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -2861,12 +2951,12 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Keen Senses",
 				"Pounce"
 			],
 			"actionTags": [
+				"Breath Weapon",
 				"Multiattack"
 			],
 			"damageTags": [
@@ -2882,6 +2972,7 @@
 				"prone",
 				"unconscious"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2890,7 +2981,9 @@
 			"isNpc": true,
 			"source": "ToA",
 			"page": 106,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -2969,11 +3062,10 @@
 				{
 					"name": "Summon Swarm {@recharge 5}",
 					"entries": [
-						"The King of Feathers exhales a swarm of insects (wasps) that forms in a space within 20 feet of it. The swarm acts as an ally of the King of Feathers and takes its turn immediately after it. The swarm disperses after 1 minute. It can't use the Summon Swarm action while it is grappling a creature with its jaws."
+						"The King of Feathers exhales a {@creature swarm of wasps||swarm of insects (wasps)} that forms in a space within 20 feet of it. The swarm acts as an ally of the King of Feathers and takes its turn immediately after it. The swarm disperses after 1 minute. It can't use the Summon Swarm action while it is grappling a creature with its jaws."
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -2991,12 +3083,18 @@
 				"MW",
 				"RCH"
 			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Kupalué",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -3016,6 +3114,7 @@
 		{
 			"name": "Kwayothé",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 26,
 			"_copy": {
@@ -3040,11 +3139,13 @@
 				"N",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Laskilar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 67,
 			"_copy": {
@@ -3084,6 +3185,7 @@
 		{
 			"name": "Liara Portyr",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 227,
 			"otherSources": [
@@ -3091,7 +3193,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -3106,7 +3210,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"{@item studded leather armor|phb}",
+						"{@item studded leather armor|phb|studded leather}",
 						"{@item shield|phb}"
 					]
 				}
@@ -3175,7 +3279,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3194,6 +3297,7 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3201,7 +3305,9 @@
 			"name": "Mantrap",
 			"source": "ToA",
 			"page": 227,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -3222,10 +3328,6 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 2,
-			"skill": {
-				"perception": "+4",
-				"stealth": "+6"
-			},
 			"senses": [
 				"tremorsense 30 ft."
 			],
@@ -3259,7 +3361,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"False Appearance"
 			],
@@ -3276,11 +3377,13 @@
 				"blinded",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Mister Threadneedle",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 183,
 			"_copy": {
@@ -3300,6 +3403,7 @@
 		{
 			"name": "Musharib",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 34,
 			"_copy": {
@@ -3323,9 +3427,12 @@
 		{
 			"name": "Mwaxanaré",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 228,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -3399,7 +3506,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"AU",
 				"C",
@@ -3407,6 +3513,9 @@
 			],
 			"damageTags": [
 				"P"
+			],
+			"damageTagsSpell": [
+				"O"
 			],
 			"spellcastingTags": [
 				"CL"
@@ -3416,15 +3525,19 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Na",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 228,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -3455,14 +3568,15 @@
 				"Common"
 			],
 			"cr": "0",
-			"hasToken": true,
 			"languageTags": [
 				"C"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Nanny Pu'pu",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 72,
 			"_copy": {
@@ -3477,11 +3591,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Nepartak",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 137,
 			"_copy": {
@@ -3500,15 +3616,16 @@
 				"Common",
 				"telepathy 30 ft."
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"TP"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Niles Breakbone",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 47,
 			"_copy": {
@@ -3538,6 +3655,7 @@
 		{
 			"name": "Ortimay Swift and Dark",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 21,
 			"_copy": {
@@ -3560,18 +3678,19 @@
 				"C",
 				"G"
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
 			"languageTags": [
 				"G",
 				"X"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Orvex Ocrammas",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 96,
 			"_copy": {
@@ -3599,17 +3718,20 @@
 				"Common",
 				"Grung"
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"OTH"
-			]
+			],
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Pterafolk",
 			"source": "ToA",
 			"page": 229,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -3680,7 +3802,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3699,12 +3820,14 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Qawasha",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -3734,9 +3857,12 @@
 		{
 			"name": "Ras Nsi",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 230,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -3757,7 +3883,7 @@
 				}
 			],
 			"hp": {
-				"special": "127 (17d8+51) reduced to 107; subtract 1 for each day that passes during the adventure"
+				"special": "127 ({@dice 17d8 + 51}) reduced to 107; subtract 1 for each day that passes during the adventure"
 			},
 			"speed": {
 				"walk": 30
@@ -3774,7 +3900,7 @@
 			},
 			"skill": {
 				"deception": "+8",
-				"persuasion": "+5",
+				"persuasion": "+8",
 				"religion": "+7",
 				"stealth": "+6"
 			},
@@ -3921,7 +4047,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance",
 				"Shapechanger"
@@ -3944,6 +4069,13 @@
 				"P",
 				"S"
 			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"N",
+				"O",
+				"Y"
+			],
 			"spellcastingTags": [
 				"CW",
 				"I"
@@ -3961,12 +4093,14 @@
 				"deafened",
 				"paralyzed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "River Mist",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -3986,6 +4120,7 @@
 		{
 			"name": "Salida",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -4015,26 +4150,22 @@
 		{
 			"name": "Sekelok",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 120,
 			"_copy": {
 				"name": "Champion",
 				"source": "VGM",
+				"_trait": {
+					"name": "Yuan-ti Pureblood",
+					"source": "VGM"
+				},
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "the champion",
 						"with": "Sekelok",
 						"flags": "i"
-					},
-					"trait": {
-						"mode": "prependArr",
-						"items": {
-							"name": "Magic Resistance",
-							"entries": [
-								"Sekelok has advantage on saving throws against spells and other magical effects."
-							]
-						}
 					}
 				}
 			},
@@ -4050,39 +4181,6 @@
 					]
 				}
 			],
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Draconic"
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"Sekelok's spellcasting ability is Charisma (spell save {@dc 13}). Sekelok can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell animal friendship} (snakes only)",
-						"{@spell poison spray}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell suggestion}"
-						]
-					},
-					"ability": "cha"
-				}
-			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -4094,13 +4192,18 @@
 				"C",
 				"DR"
 			],
+			"damageTagsSpell": [
+				"I"
+			],
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Shago",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 35,
 			"_copy": {
@@ -4172,7 +4275,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Spider Climb"
 			],
@@ -4181,13 +4283,16 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Spiked Tomb Guardian",
 			"source": "ToA",
 			"page": 154,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"N"
@@ -4296,7 +4401,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Damage Absorption",
 				"Immutable Form",
@@ -4319,13 +4423,16 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Stone Juggernaut",
 			"source": "ToA",
 			"page": 231,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -4416,7 +4523,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Immutable Form",
 				"Regeneration",
@@ -4434,6 +4540,7 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4441,7 +4548,9 @@
 			"name": "Su-monster",
 			"source": "ToA",
 			"page": 232,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -4496,7 +4605,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4511,12 +4619,14 @@
 			"conditionInflict": [
 				"stunned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Syndra Silvane",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 8,
 			"_copy": {
@@ -4546,19 +4656,21 @@
 				"Elvish",
 				"Halfling"
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"D",
 				"E",
 				"H"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Tabaxi Hunter",
 			"source": "ToA",
 			"page": 232,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4639,7 +4751,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -4659,13 +4770,16 @@
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Tabaxi Minstrel",
 			"source": "ToA",
 			"page": 233,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4741,7 +4855,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -4761,6 +4874,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4810,16 +4924,18 @@
 					}
 				}
 			},
-			"hasToken": true,
 			"damageTags": [
 				"P"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Tomb Dwarf",
 			"source": "ToA",
 			"page": 135,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -4829,7 +4945,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item studded leather armor|phb|studded leather}"
 					]
 				}
 			],
@@ -4911,7 +5027,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -4930,10 +5045,12 @@
 				"S"
 			],
 			"miscTags": [
+				"HPR",
 				"MW",
 				"RNG",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4941,7 +5058,9 @@
 			"name": "Tomb Guardian",
 			"source": "ToA",
 			"page": 127,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"N"
@@ -5043,7 +5162,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Damage Absorption",
 				"Immutable Form",
@@ -5065,13 +5183,17 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Tri-flower Frond",
 			"source": "ToA",
 			"page": 234,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -5129,7 +5251,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
@@ -5149,6 +5270,7 @@
 				"poisoned",
 				"unconscious"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5156,7 +5278,9 @@
 			"name": "Tyrannosaurus Zombie",
 			"source": "ToA",
 			"page": 241,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "undead",
 			"alignment": [
 				"U"
@@ -5227,7 +5351,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -5249,6 +5372,7 @@
 				"grappled",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5258,7 +5382,9 @@
 			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 58,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -5423,7 +5549,7 @@
 				{
 					"name": "Mask",
 					"entries": [
-						"As a bonus action, Valindra can mask her shriveled flesh and appear to be a living elf. This magical illusion lasts until she ends it as a bonus action or until she uses her Frightening Gaze legendary action. The effect also ends if Valindra drops to 30 hit points or fewer, or if dispel magic is cast on her."
+						"As a bonus action, Valindra can mask her shriveled flesh and appear to be a living elf. This magical illusion lasts until she ends it as a bonus action or until she uses her Frightening Gaze legendary action. The effect also ends if Valindra drops to 30 hit points or fewer, or if {@spell dispel magic} is cast on her."
 					]
 				},
 				{
@@ -5485,7 +5611,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Legendary Resistances",
 				"Rejuvenation",
@@ -5506,6 +5631,15 @@
 				"C",
 				"N"
 			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"N",
+				"O",
+				"T"
+			],
 			"spellcastingTags": [
 				"CW"
 			],
@@ -5518,12 +5652,14 @@
 				"invisible",
 				"stunned"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Volothamp \"Volo\" Geddarm",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 235,
 			"otherSources": [
@@ -5531,7 +5667,9 @@
 					"source": "WDH"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -5616,7 +5754,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"D",
@@ -5633,11 +5770,13 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Wakanga O'tamu",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 27,
 			"_copy": {
@@ -5662,7 +5801,8 @@
 				"L",
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Wild Dog",
@@ -5683,7 +5823,6 @@
 		},
 		{
 			"name": "Wine Weird",
-			"isNpc": true,
 			"source": "ToA",
 			"page": 141,
 			"_copy": {
@@ -5702,9 +5841,12 @@
 		{
 			"name": "Withers",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 145,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -5714,7 +5856,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item studded leather armor|phb}"
+						"{@item studded leather armor|phb|studded leather}"
 					]
 				}
 			],
@@ -5853,7 +5995,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -5870,21 +6011,33 @@
 				"N",
 				"S"
 			],
+			"damageTagsSpell": [
+				"A",
+				"F",
+				"L",
+				"N",
+				"T"
+			],
 			"spellcastingTags": [
 				"CW"
 			],
 			"miscTags": [
+				"HPR",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Xandala",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 236,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -6007,7 +6160,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"languageTags": [
 				"C",
 				"D",
@@ -6018,12 +6170,22 @@
 			"damageTags": [
 				"B"
 			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
 			"spellcastingTags": [
 				"CS"
 			],
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6031,7 +6193,9 @@
 			"name": "Yellow Musk Creeper",
 			"source": "ToA",
 			"page": 237,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -6092,7 +6256,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"False Appearance",
 				"Regeneration"
@@ -6109,6 +6272,7 @@
 			"conditionInflict": [
 				"charmed"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6116,7 +6280,9 @@
 			"name": "Yellow Musk Zombie",
 			"source": "ToA",
 			"page": 237,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"U"
@@ -6162,7 +6328,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -6175,12 +6340,14 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Yorb",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 108,
 			"_copy": {
@@ -6198,7 +6365,8 @@
 					"variant": true
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Yuan-ti Priest",
@@ -6234,14 +6402,19 @@
 					"ability": "cha"
 				}
 			],
-			"hasToken": true,
+			"damageTagsSpell": [
+				"I",
+				"O"
+			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Zalkoré",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 79,
 			"_copy": {
@@ -6261,6 +6434,7 @@
 		{
 			"name": "Zaroum Al-Saryak",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 67,
 			"_copy": {
@@ -6301,6 +6475,7 @@
 		{
 			"name": "Zhanthi",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 27,
 			"_copy": {
@@ -6325,14 +6500,18 @@
 				"N",
 				"G"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zindar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ToA",
 			"page": 239,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -6492,10 +6671,12 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"B",
 				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
 			],
 			"languageTags": [
 				"C",
@@ -6507,6 +6688,10 @@
 				"B",
 				"F"
 			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
 			"spellcastingTags": [
 				"CS"
 			],
@@ -6514,6 +6699,7 @@
 				"AOE",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6521,7 +6707,9 @@
 			"name": "Zorbo",
 			"source": "ToA",
 			"page": 241,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -6575,7 +6763,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -6585,6 +6772,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
