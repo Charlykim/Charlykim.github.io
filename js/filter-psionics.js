@@ -11,9 +11,8 @@ class PageFilterPsionics extends PageFilter {
 	// endregion
 
 	constructor () {
-		super();
+		super({sourceFilterOpts: {deselFn: () => false}});
 
-		this._sourceFilter = new SourceFilter({deselFn: () => false});
 		this._typeFilter = new Filter({header: "Type", items: [Parser.PSI_ABV_TYPE_TALENT, Parser.PSI_ABV_TYPE_DISCIPLINE], displayFn: Parser.psiTypeToFull, itemSortFn: PageFilterPsionics._sortFilterTypes});
 		this._orderFilter = new Filter({
 			header: "Order",
@@ -47,6 +46,18 @@ class PageFilterPsionics extends PageFilter {
 			p.source,
 			p.type,
 			p._fOrder,
-		)
+		);
 	}
 }
+
+globalThis.PageFilterPsionics = PageFilterPsionics;
+
+class ListSyntaxPsionics extends ListUiUtil.ListSyntax {
+	static _INDEXABLE_PROPS_ENTRIES = [
+		"entries",
+		"modes",
+		"focus",
+	];
+}
+
+globalThis.ListSyntaxPsionics = ListSyntaxPsionics;

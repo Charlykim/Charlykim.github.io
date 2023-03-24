@@ -16,9 +16,12 @@
 		{
 			"name": "Billy Beaver",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 27,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -85,7 +88,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -101,14 +103,18 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Buster the Bear",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 27,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"C",
@@ -178,7 +184,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -191,12 +196,13 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Large Mimic",
 			"source": "RMBRE",
-			"page": 122,
+			"page": 24,
 			"_copy": {
 				"name": "Mimic",
 				"source": "MM",
@@ -212,7 +218,9 @@
 					}
 				}
 			},
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"hp": {
 				"formula": "9d8 + 18",
 				"average": 75
@@ -221,17 +229,20 @@
 				"walk": 0
 			},
 			"cr": "3",
-			"hasToken": true,
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Layla the Lizard",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 28,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"C",
@@ -289,7 +300,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -303,58 +313,20 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Lycanthropickle",
-			"group": "Lycanthropes",
+			"group": [
+				"Lycanthropes"
+			],
 			"source": "RMBRE",
 			"page": 11,
-			"size": "S",
-			"type": "plant",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 4,
-				"formula": "1d6 + 1"
+			"_copy": {
+				"name": "Twig Blight",
+				"source": "MM"
 			},
-			"speed": {
-				"walk": 20
-			},
-			"str": 6,
-			"dex": 13,
-			"con": 12,
-			"int": 4,
-			"wis": 8,
-			"cha": 3,
-			"skill": {
-				"stealth": "+3"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 9,
-			"vulnerable": [
-				"fire"
-			],
-			"conditionImmune": [
-				"blinded",
-				"deafened"
-			],
-			"languages": [
-				"Common understands but can't speak"
-			],
-			"cr": "1/8",
 			"trait": [
 				{
 					"name": "False Appearance",
@@ -363,31 +335,7 @@
 					]
 				}
 			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
-					]
-				}
-			],
 			"hasToken": true,
-			"traitTags": [
-				"False Appearance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"languageTags": [
-				"C",
-				"CS"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -407,9 +355,12 @@
 		{
 			"name": "Piggy Wiggle Butt",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 28,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"C",
@@ -477,7 +428,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"traitTags": [
 				"Aggressive"
 			],
@@ -493,14 +443,18 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Thomas T. Toad",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 28,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"C",
@@ -557,7 +511,6 @@
 					]
 				}
 			],
-			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -570,11 +523,13 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Tommy Two-Butts",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RMBRE",
 			"page": 18,
 			"_copy": {

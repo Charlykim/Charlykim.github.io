@@ -58,24 +58,9 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"SGT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+				"SGT",
+				"UBA"
+			]
 		},
 		{
 			"name": "Fizban's Platinum Shield",
@@ -137,18 +122,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Flame Stride",
@@ -198,26 +174,9 @@
 			"damageInflict": [
 				"fire"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			"miscTags": [
+				"OBJ"
+			]
 		},
 		{
 			"name": "Icingdeath's Frost",
@@ -264,19 +223,7 @@
 			],
 			"savingThrow": [
 				"constitution"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Nathair's Mischief",
@@ -339,7 +286,7 @@
 						],
 						[
 							"4",
-							"Drops of molasses appear and hover in the cube, turning it into difficult terrain until the start of your next turn."
+							"Drops of molasses appear and hover in the cube, turning it into {@quickref difficult terrain||3} until the start of your next turn."
 						]
 					]
 				}
@@ -353,22 +300,9 @@
 				"dexterity",
 				"wisdom"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			"miscTags": [
+				"RO"
+			]
 		},
 		{
 			"name": "Raulothim's Psychic Lance",
@@ -421,27 +355,7 @@
 			],
 			"miscTags": [
 				"SGT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Summon Draconic Spirit",
@@ -497,23 +411,7 @@
 			"miscTags": [
 				"SGT",
 				"SMN"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		}
 	]
 }
