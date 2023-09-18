@@ -1,14 +1,33 @@
 "use strict";
 
 class PageFilterEquipment extends PageFilter {
+	static _RE_FOUNDRY_ATTR = /(?:[-+*/]\s*)?@[a-z0-9.]+/gi;
 	static _RE_DAMAGE_DICE_JUNK = /[^-+*/0-9d]/gi;
 	static _RE_DAMAGE_DICE_D = /d/gi;
 
+	static _getSortableDamageTerm (t) {
+		try {
+			/* eslint-disable no-eval */
+			return eval(
+				`${t}`
+					.replace(this._RE_FOUNDRY_ATTR, "")
+					.replace(this._RE_DAMAGE_DICE_JUNK, "")
+					.replace(this._RE_DAMAGE_DICE_D, "*"),
+			);
+			/* eslint-enable no-eval */
+		} catch (ignored) {
+			return Number.MAX_SAFE_INTEGER;
+		}
+	}
+
 	static _sortDamageDice (a, b) {
-		/* eslint-disable no-eval */
-		return eval((`${a.item}`).replace(this._RE_DAMAGE_DICE_JUNK, "").replace(this._RE_DAMAGE_DICE_D, "*"))
-			- eval((`${b.item}`).replace(this._RE_DAMAGE_DICE_JUNK, "").replace(this._RE_DAMAGE_DICE_D, "*"));
-		/* eslint-enable no-eval */
+		return this._getSortableDamageTerm(a.item) - this._getSortableDamageTerm(b.item);
+	}
+
+	static _getMasteryDisplay (mastery) {
+		const {name, source} = DataUtil.proxy.unpackUid("itemMastery", mastery, "itemMastery");
+		if (SourceUtil.isSiteSource(source)) return name.toTitleCase();
+		return `${name.toTitleCase()} (${Parser.sourceJsonToAbv(source)})`;
 	}
 
 	constructor ({filterOpts = null} = {}) {
@@ -19,7 +38,7 @@ class PageFilterEquipment extends PageFilter {
 			deselFn: (it) => PageFilterItems._DEFAULT_HIDDEN_TYPES.has(it),
 			displayFn: StrUtil.toTitleCase,
 		});
-		this._propertyFilter = new Filter({header: "Property", displayFn: StrUtil.uppercaseFirst});
+		this._propertyFilter = new Filter({header: "Property", displayFn: StrUtil.toTitleCase});
 		this._categoryFilter = new Filter({
 			header: "Category",
 			items: ["Basic", "Generic Variant", "Specific Variant", "Other"],
@@ -44,14 +63,19 @@ class PageFilterEquipment extends PageFilter {
 		this._focusFilter = new Filter({header: "Spellcasting Focus", items: [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES]});
 		this._damageTypeFilter = new Filter({header: "Weapon Damage Type", displayFn: it => Parser.dmgTypeToFull(it).uppercaseFirst(), itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.dmgTypeToFull(a), Parser.dmgTypeToFull(b))});
 		this._damageDiceFilter = new Filter({header: "Weapon Damage Dice", items: ["1", "1d4", "1d6", "1d8", "1d10", "1d12", "2d6"], itemSortFn: (a, b) => PageFilterEquipment._sortDamageDice(a, b)});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Item Group", "Bundle", "SRD", "Basic Rules", "Has Images", "Has Info"], isMiscFilter: true});
+		this._miscFilter = new Filter({
+			header: "Miscellaneous",
+			items: ["Item Group", "Bundle", "SRD", "Basic Rules", "Has Images", "Has Info", ...Object.values(Parser.ITEM_MISC_TAG_TO_FULL)],
+			isMiscFilter: true,
+		});
 		this._poisonTypeFilter = new Filter({header: "Poison Type", items: ["ingested", "injury", "inhaled", "contact"], displayFn: StrUtil.toTitleCase});
+		this._masteryFilter = new Filter({header: "Mastery", displayFn: this.constructor._getMasteryDisplay.bind(this)});
 	}
 
 	static mutateForFilters (item) {
 		item._fSources = SourceFilter.getCompleteFilterSources(item);
 
-		item._fProperties = item.property ? item.property.map(p => Renderer.item.propertyMap[p].name).filter(n => n) : [];
+		item._fProperties = item.property ? item.property.map(p => Renderer.item.getProperty(p).name).filter(n => n) : [];
 
 		item._fMisc = [];
 		if (item._isItemGroup) item._fMisc.push("Item Group");
@@ -91,6 +115,13 @@ class PageFilterEquipment extends PageFilter {
 		item._fDamageDice = [];
 		if (item.dmg1) item._fDamageDice.push(item.dmg1);
 		if (item.dmg2) item._fDamageDice.push(item.dmg2);
+
+		item._fMastery = item.mastery
+			? item.mastery.map(it => {
+				const {name, source} = DataUtil.proxy.unpackUid("itemMastery", it, "itemMastery", {isLower: true});
+				return [name, source].join("|");
+			})
+			: null;
 	}
 
 	addToFilters (item, isExcluded) {
@@ -103,6 +134,7 @@ class PageFilterEquipment extends PageFilter {
 		this._damageDiceFilter.addItem(item._fDamageDice);
 		this._poisonTypeFilter.addItem(item.poisonTypes);
 		this._miscFilter.addItem(item._fMisc);
+		this._masteryFilter.addItem(item._fMastery);
 	}
 
 	async _pPopulateBoxOptions (opts) {
@@ -118,6 +150,7 @@ class PageFilterEquipment extends PageFilter {
 			this._damageDiceFilter,
 			this._miscFilter,
 			this._poisonTypeFilter,
+			this._masteryFilter,
 		];
 	}
 
@@ -135,6 +168,7 @@ class PageFilterEquipment extends PageFilter {
 			it._fDamageDice,
 			it._fMisc,
 			it.poisonTypes,
+			it._fMastery,
 		);
 	}
 }
@@ -342,6 +376,7 @@ class PageFilterItems extends PageFilterEquipment {
 			this._miscFilter,
 			this._rechargeTypeFilter,
 			this._poisonTypeFilter,
+			this._masteryFilter,
 			this._lootTableFilter,
 			this._baseItemFilter,
 			this._baseSourceFilter,
@@ -369,6 +404,7 @@ class PageFilterItems extends PageFilterEquipment {
 			it._fMisc,
 			it.recharge,
 			it.poisonTypes,
+			it._fMastery,
 			it.lootTables,
 			it._fBaseItemAll,
 			it._baseSource,
@@ -440,7 +476,7 @@ class ModalFilterItems extends ModalFilter {
 
 			<div class="col-5 ${item._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${item._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${item.name}</div>
 			<div class="col-5">${type.uppercaseFirst()}</div>
-			<div class="col-1 text-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}</div>
+			<div class="col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

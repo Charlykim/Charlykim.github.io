@@ -476,6 +476,12 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -571,6 +577,9 @@
 			],
 			"conditionInflict": [
 				"grappled"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -695,6 +704,7 @@
 				"performance": "+7"
 			},
 			"reaction": null,
+			"actionTags": [],
 			"hasToken": true
 		},
 		{
@@ -707,7 +717,8 @@
 				"source": "MM"
 			},
 			"int": 10,
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Eldritch Horror Hatchling",
@@ -788,6 +799,11 @@
 					"ability": "int",
 					"displayAs": "action"
 				}
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1110,7 +1126,8 @@
 				"L",
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Jalynvyr Nir'Thinn",
@@ -1152,7 +1169,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Joster Mareet",
@@ -1171,13 +1189,8 @@
 					}
 				}
 			},
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"incubus"
-				]
-			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Juvenile Eldritch Horror",
@@ -1215,6 +1228,9 @@
 					"displayAs": "action"
 				}
 			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			],
 			"hasToken": true
 		},
 		{
@@ -1225,10 +1241,6 @@
 			"_copy": {
 				"name": "Deep Gnome (Svirfneblin)",
 				"source": "MM",
-				"_trait": {
-					"name": "Deep Gnome",
-					"source": "DMG"
-				},
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
@@ -1466,6 +1478,13 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1489,7 +1508,8 @@
 				"L",
 				"G"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Naevys Tharesso",
@@ -1721,6 +1741,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1742,7 +1765,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Sabrina Kilgore (Levels 1-4)",
@@ -1983,6 +2007,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -1992,6 +2017,14 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2028,7 +2061,8 @@
 					]
 				}
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Tiefling Acrobat",
@@ -2161,6 +2195,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"U"
 			],
@@ -2187,11 +2224,18 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"blinded",
 				"deafened"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2407,7 +2451,8 @@
 				"Deep Speech",
 				"Elvish"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zorhanna Adulare",
@@ -2433,7 +2478,8 @@
 				"Elvish",
 				"Sylvan"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zorhanna's Simulacrum",

@@ -223,9 +223,10 @@ function getEncodedDeity (str, tag) {
 class LinkCheck extends DataTesterBase {
 	static registerParsedPrimitiveHandlers (parsedJsonChecker) {
 		parsedJsonChecker.addPrimitiveHandler("string", this._checkString.bind(this));
+		parsedJsonChecker.addPrimitiveHandler("object", this._checkObject.bind(this));
 	}
 
-	static _checkString (str, {filePath}) {
+	static _checkString (str, {filePath, isStatblock = false}) {
 		let match;
 		while ((match = LinkCheck.RE.exec(str))) {
 			const tag = match[1];
@@ -261,9 +262,19 @@ class LinkCheck extends DataTesterBase {
 			const url = `${Renderer.tag.getPage(tag)}#${UrlUtil.encodeForHash(toEncode)}`.toLowerCase().trim()
 				.replace(/%5c/gi, ""); // replace slashes
 			if (!ALL_URLS.has(url)) {
-				this._addMessage(`Missing link: ${match[0]} in file ${filePath} (evaluates to "${url}")\nSimilar URLs were:\n${getSimilar(url)}\n`);
+				this._addMessage(`Missing link: ${isStatblock ? `(as "statblock" entry) ` : ""}${match[0]} in file ${filePath} (evaluates to "${url}")\nSimilar URLs were:\n${getSimilar(url)}\n`);
 			}
 		}
+	}
+
+	static _checkObject (obj, {filePath}) {
+		if (obj.type !== "statblock") return obj;
+
+		// TODO(Future) expand/tweak support as required
+		const asStr = `{@${obj.tag} ${obj.name}|${obj.source || ""}}`;
+		this._checkString(asStr, {filePath, isStatblock: true});
+
+		return obj;
 	}
 }
 LinkCheck._RE_TAG_BLOCKLIST = new Set(["quickref"]);
@@ -493,7 +504,7 @@ class ScaleDiceCheck extends DataTesterBase {
 			const spl = m2.split("|");
 			if (spl.length < 3) {
 				this._addMessage(`${m1} tag "${str}" was too short!\n`);
-			} else if (spl.length > 4) {
+			} else if (spl.length > 5) {
 				this._addMessage(`${m1} tag "${str}" was too long!\n`);
 			} else {
 				let range;
@@ -504,7 +515,7 @@ class ScaleDiceCheck extends DataTesterBase {
 					return;
 				}
 				if (range.size < 2) this._addMessage(`Invalid scaling dice in file ${filePath}: range "${spl[1]}" has too few entries! Should be 2 or more.\n`);
-				if (spl[4] && spl[4] !== "psi") this._addMessage(`Unknown mode "${spl[4]}".\n`);
+				if (spl[3] && spl[3] !== "psi") this._addMessage(`Unknown mode "${spl[4]}".\n`);
 			}
 			return m0;
 		});
@@ -517,7 +528,7 @@ class StripTagTest extends DataTesterBase {
 	}
 
 	static _checkString (str, {filePath}) {
-		if (filePath === "./data/bestiary/traits.json") return;
+		if (filePath === "./data/bestiary/template.json") return;
 
 		try {
 			Renderer.stripTags(str);
@@ -539,7 +550,7 @@ class TableDiceTest extends DataTesterBase {
 	static _checkTable (obj, {filePath}) {
 		if (obj.type !== "table") return;
 
-		const autoRollMode = Renderer.getAutoConvertedTableRollMode(obj);
+		const autoRollMode = Renderer.table.getAutoConvertedRollMode(obj);
 		if (!autoRollMode) return;
 
 		const toRenderLabel = autoRollMode ? RollerUtil.getFullRollCol(obj.colLabels[0]) : null;
@@ -593,7 +604,7 @@ class TableDiceTest extends DataTesterBase {
 				const max = wrpRollTree.tree.max({});
 				for (let i = min; i < max + 1; ++i) possibleRolls.add(i);
 			} else {
-				if (!hasPrompt) errors.push(`"${obj.colLabels[0]}" was not a valid rollable header?!`);
+				if (!hasPrompt) errors.push(`${JSON.stringify(obj.colLabels[0])} was not a valid rollable header?!`);
 			}
 		});
 
@@ -869,6 +880,13 @@ class BestiaryDataCheck extends GenericDataCheck {
 			const url = getEncoded(mon.summonedBySpell, "spell");
 			if (!ALL_URLS.has(url)) this._addMessage(`Missing link: ${mon.summonedBySpell} in file ${file} "summonedBySpell" (evaluates to "${url}")\nSimilar URLs were:\n${getSimilar(url)}\n`);
 		}
+
+		if (mon.attachedItems) {
+			mon.attachedItems.forEach(s => {
+				const url = getEncoded(s, "item");
+				if (!ALL_URLS.has(url)) this._addMessage(`Missing link: ${s} in file ${file} (evaluates to "${url}") in "attachedItems"\nSimilar URLs were:\n${getSimilar(url)}\n`);
+			});
+		}
 	}
 
 	static pRun () {
@@ -946,7 +964,7 @@ class DuplicateEntityCheck extends DataTesterBase {
 
 					if (!ent._versions) return;
 
-					isSkipVersionCheck || DataUtil.proxy.getVersions(prop, ent)
+					isSkipVersionCheck || DataUtil.proxy.getVersions(prop, ent, {isExternalApplicationIdentityOnly: true})
 						.forEach((entVer, j) => {
 							this._doAddPosition({prop, ent: entVer, ixArray: i, ixVersion: j, positions});
 						});

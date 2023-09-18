@@ -7296,6 +7296,7 @@
 							"depth": 1,
 							"header": "41. Hall of the Goblin Chief"
 						},
+						"Grove Level Locations",
 						{
 							"depth": 1,
 							"header": "42. Central Garden"
@@ -11602,7 +11603,8 @@
 					"headers": [
 						"Daoine Gloine",
 						"Meeting Kwalish",
-						"Concluding the Adventure"
+						"Concluding the Adventure",
+						"Acknowledgments and Final Thanks"
 					]
 				},
 				{
@@ -11658,6 +11660,9 @@
 						"type": "appendix",
 						"identifier": "F"
 					}
+				},
+				{
+					"name": "Daoine Gloine Map"
 				}
 			]
 		},
@@ -20642,7 +20647,7 @@
 			"name": "The Lost Dungeon of Rickedness: Big Rick Energy",
 			"id": "RMBRE",
 			"source": "RMBRE",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/RMR.png",
 			"published": "2019-11-19",
 			"storyline": "Rick and Morty",
@@ -20857,7 +20862,7 @@
 			"id": "ToR",
 			"source": "ToR",
 			"parentSource": "EGW",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/EGW.png",
 			"published": "2020-03-17",
 			"publishedOrder": 0,
@@ -20928,7 +20933,7 @@
 			"id": "DD",
 			"source": "DD",
 			"parentSource": "EGW",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/EGW.png",
 			"published": "2020-03-17",
 			"publishedOrder": 1,
@@ -21066,7 +21071,7 @@
 			"id": "FS",
 			"source": "FS",
 			"parentSource": "EGW",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/EGW.png",
 			"published": "2020-03-17",
 			"publishedOrder": 2,
@@ -21195,7 +21200,7 @@
 			"id": "US",
 			"source": "US",
 			"parentSource": "EGW",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/EGW.png",
 			"published": "2020-03-17",
 			"publishedOrder": 3,
@@ -22981,7 +22986,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Spire of Iriolarthas (Y19a-Y19h)"
+							"header": "Spire of Iriolarthas (Y19a-Y19q)"
 						},
 						{
 							"depth": 1,
@@ -26540,7 +26545,7 @@
 			"name": "Critical Role: Call of the Netherdeep",
 			"id": "CRCotN",
 			"source": "CRCotN",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/CRCotN.png",
 			"published": "2022-03-15",
 			"storyline": "Critical Role",
@@ -29828,6 +29833,57 @@
 							"header": "B30: Vrakir's Demiplane"
 						},
 						"Conclusion"
+					]
+				}
+			]
+		},
+		{
+			"name": "Giants of the Star Forge",
+			"id": "GotSF",
+			"source": "GotSF",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/GotSF.png",
+			"published": "2023-08-01",
+			"storyline": "Giants of the Star Forge",
+			"level": {
+				"start": 16,
+				"end": 16
+			},
+			"contents": [
+				{
+					"name": "Giants of the Star Forge",
+					"headers": [
+						"Adventure Background",
+						"Running This Adventure",
+						"Getting Started",
+						"Fireside Monastery",
+						"Star Forge",
+						{
+							"depth": 1,
+							"header": "1: Broken Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "2: Acidic Lake"
+						},
+						{
+							"depth": 1,
+							"header": "3: Iron Shelter"
+						},
+						{
+							"depth": 1,
+							"header": "4: Island Path"
+						},
+						{
+							"depth": 1,
+							"header": "5: Cracked Runestone"
+						},
+						{
+							"depth": 1,
+							"header": "6: Star Forge"
+						},
+						"Conclusion",
+						"Appendix"
 					]
 				}
 			]
