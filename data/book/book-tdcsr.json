@@ -63,7 +63,7 @@
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "book/TDCSR/Cover-Wide.jpg"
+										"path": "book/TDCSR/Cover-Wide.webp"
 									},
 									"credit": "{@link Genel Jumalon|https://artstation.com/geneljumalon}",
 									"altText": "The deck of an airship flying through the clouds above Tal'Dorei with an adranach attacking the helm of the ship, which is on fire from the adranach attack. Five adventurers on the deck of the airship face the adranach and rush to attack it, with a sixth adventurer leaping to attack the adranach. The adranach is a large, purple, luminescent winged creature with a silver mask, silver-taloned front paws, and stars glittering in its wings.",
@@ -3273,12 +3273,13 @@
 													"grid": {
 														"type": "none"
 													},
-													"mapName": "Stilben (Player Version)",
+													"mapName": "Player Version",
 													"width": 2550,
 													"height": 1731,
 													"mapParent": {
 														"id": "2c7"
-													}
+													},
+													"credit": "{@link Andy Law|https://artstation.com/andylaw1}"
 												}
 											]
 										}
@@ -3409,7 +3410,7 @@
 						},
 						{
 							"type": "insetReadaloud",
-							"page": 65,
+							"page": 72,
 							"entries": [
 								{
 									"type": "list",
@@ -3772,7 +3773,489 @@
 													"mapName": "The City of Whitestone",
 													"width": 2164,
 													"height": 3188,
-													"id": "2c8"
+													"id": "2c8",
+													"mapRegions": [
+														{
+															"area": "1. Castle Whitestone",
+															"points": [
+																[
+																	1297,
+																	371
+																],
+																[
+																	1373,
+																	288
+																],
+																[
+																	1398,
+																	242
+																],
+																[
+																	1436,
+																	242
+																],
+																[
+																	1457,
+																	291
+																],
+																[
+																	1507,
+																	337
+																],
+																[
+																	1560,
+																	400
+																],
+																[
+																	1560,
+																	469
+																],
+																[
+																	1528,
+																	509
+																],
+																[
+																	1455,
+																	581
+																],
+																[
+																	1436,
+																	621
+																],
+																[
+																	1402,
+																	627
+																],
+																[
+																	1377,
+																	585
+																],
+																[
+																	1333,
+																	545
+																],
+																[
+																	1272,
+																	501
+																],
+																[
+																	1263,
+																	472
+																],
+																[
+																	1301,
+																	459
+																],
+																[
+																	1339,
+																	423
+																]
+															]
+														},
+														{
+															"area": "10. Galdric's Gate",
+															"points": [
+																[
+																	343,
+																	838
+																],
+																[
+																	343,
+																	931
+																],
+																[
+																	438,
+																	931
+																],
+																[
+																	438,
+																	838
+																]
+															]
+														},
+														{
+															"area": "9. Lord Trinket's Public Park",
+															"points": [
+																[
+																	194,
+																	1337
+																],
+																[
+																	204,
+																	1246
+																],
+																[
+																	238,
+																	1160
+																],
+																[
+																	295,
+																	1076
+																],
+																[
+																	341,
+																	1000
+																],
+																[
+																	368,
+																	954
+																],
+																[
+																	415,
+																	935
+																],
+																[
+																	459,
+																	937
+																],
+																[
+																	507,
+																	964
+																],
+																[
+																	528,
+																	1004
+																],
+																[
+																	535,
+																	1082
+																],
+																[
+																	549,
+																	1137
+																],
+																[
+																	564,
+																	1166
+																],
+																[
+																	518,
+																	1198
+																],
+																[
+																	482,
+																	1225
+																],
+																[
+																	476,
+																	1257
+																],
+																[
+																	421,
+																	1282
+																],
+																[
+																	343,
+																	1312
+																],
+																[
+																	286,
+																	1341
+																],
+																[
+																	240,
+																	1362
+																],
+																[
+																	202,
+																	1364
+																]
+															]
+														},
+														{
+															"area": "4. The Heart of Whitestone",
+															"points": [
+																[
+																	1048,
+																	939
+																],
+																[
+																	1198,
+																	958
+																],
+																[
+																	1179,
+																	1059
+																],
+																[
+																	1053,
+																	1040
+																],
+																[
+																	1046,
+																	989
+																]
+															]
+														},
+														{
+															"area": "2. The Sun Tree",
+															"points": [
+																[
+																	1571,
+																	977
+																],
+																[
+																	1571,
+																	1118
+																],
+																[
+																	1716,
+																	1118
+																],
+																[
+																	1716,
+																	977
+																]
+															]
+														},
+														{
+															"area": "3. Temples and the Greyfield",
+															"points": [
+																[
+																	1693,
+																	1476
+																],
+																[
+																	1741,
+																	1375
+																],
+																[
+																	1775,
+																	1337
+																],
+																[
+																	1933,
+																	1309
+																],
+																[
+																	2008,
+																	1387
+																],
+																[
+																	1886,
+																	1587
+																],
+																[
+																	1851,
+																	1581
+																],
+																[
+																	1811,
+																	1571
+																],
+																[
+																	1743,
+																	1522
+																]
+															]
+														},
+														{
+															"area": "5. Snowdrop Memorial Trail",
+															"points": [
+																[
+																	1640,
+																	1718
+																],
+																[
+																	1709,
+																	1733
+																],
+																[
+																	1798,
+																	1747
+																],
+																[
+																	1914,
+																	1756
+																],
+																[
+																	1975,
+																	1705
+																],
+																[
+																	2011,
+																	1642
+																],
+																[
+																	1994,
+																	1581
+																],
+																[
+																	2032,
+																	1512
+																],
+																[
+																	1992,
+																	1467
+																],
+																[
+																	2027,
+																	1429
+																],
+																[
+																	2072,
+																	1478
+																],
+																[
+																	2074,
+																	1579
+																],
+																[
+																	2027,
+																	1606
+																],
+																[
+																	2038,
+																	1669
+																],
+																[
+																	2011,
+																	1747
+																],
+																[
+																	1931,
+																	1796
+																],
+																[
+																	1846,
+																	1800
+																],
+																[
+																	1743,
+																	1785
+																],
+																[
+																	1665,
+																	1754
+																]
+															]
+														},
+														{
+															"area": "12. Hearth of the Everlight",
+															"points": [
+																[
+																	678,
+																	2133
+																],
+																[
+																	678,
+																	2213
+																],
+																[
+																	783,
+																	2213
+																],
+																[
+																	783,
+																	2133
+																]
+															]
+														},
+														{
+															"area": "7. House of the Lawbearer",
+															"points": [
+																[
+																	648,
+																	1695
+																],
+																[
+																	648,
+																	1789
+																],
+																[
+																	741,
+																	1789
+																],
+																[
+																	741,
+																	1695
+																]
+															]
+														},
+														{
+															"area": "8. Slayer's Cake Bakery",
+															"points": [
+																[
+																	573,
+																	1389
+																],
+																[
+																	573,
+																	1478
+																],
+																[
+																	663,
+																	1478
+																],
+																[
+																	663,
+																	1389
+																]
+															]
+														},
+														{
+															"area": "2. The Sun Tree",
+															"points": [
+																[
+																	912,
+																	1459
+																],
+																[
+																	912,
+																	1573
+																],
+																[
+																	1017,
+																	1573
+																],
+																[
+																	1017,
+																	1459
+																]
+															]
+														},
+														{
+															"area": "6. Grey Hunt Manor",
+															"points": [
+																[
+																	1438,
+																	1709
+																],
+																[
+																	1469,
+																	1606
+																],
+																[
+																	1539,
+																	1571
+																],
+																[
+																	1587,
+																	1621
+																],
+																[
+																	1611,
+																	1661
+																],
+																[
+																	1613,
+																	1743
+																],
+																[
+																	1531,
+																	1737
+																],
+																[
+																	1469,
+																	1724
+																]
+															]
+														}
+													],
+													"hrefThumbnail": {
+														"type": "internal",
+														"path": "book/TDCSR/thumbnail/Chapter3-WhitestoneMap.webp"
+													}
 												},
 												{
 													"type": "image",
@@ -3785,12 +4268,13 @@
 													"grid": {
 														"type": "none"
 													},
-													"mapName": "The City of Whitestone (Player Version)",
+													"mapName": "Player Version",
 													"width": 2164,
 													"height": 3188,
 													"mapParent": {
 														"id": "2c8"
-													}
+													},
+													"credit": "{@link Kent Davis|https://artstation.com/idrawbagman}"
 												}
 											]
 										},
@@ -4600,7 +5084,181 @@
 													"mapName": "The City of Westruun",
 													"width": 2550,
 													"height": 1730,
-													"id": "2c9"
+													"id": "2c9",
+													"mapRegions": [
+														{
+															"area": "1. Cobalt Reserve",
+															"points": [
+																[
+																	712,
+																	461
+																],
+																[
+																	712,
+																	535
+																],
+																[
+																	781,
+																	535
+																],
+																[
+																	781,
+																	461
+																]
+															]
+														},
+														{
+															"area": "3. Yuminor Observatory",
+															"points": [
+																[
+																	1025,
+																	522
+																],
+																[
+																	1025,
+																	583
+																],
+																[
+																	1101,
+																	583
+																],
+																[
+																	1101,
+																	522
+																]
+															]
+														},
+														{
+															"area": "2. Westhall Academy",
+															"points": [
+																[
+																	998,
+																	602
+																],
+																[
+																	998,
+																	657
+																],
+																[
+																	1059,
+																	657
+																],
+																[
+																	1059,
+																	602
+																]
+															]
+														},
+														{
+															"area": "14. Gilmore's Glorious Goods",
+															"points": [
+																[
+																	901,
+																	764
+																],
+																[
+																	901,
+																	842
+																],
+																[
+																	968,
+																	842
+																],
+																[
+																	968,
+																	764
+																]
+															]
+														},
+														{
+															"area": "4. First Bastion",
+															"points": [
+																[
+																	1139,
+																	1027
+																],
+																[
+																	1139,
+																	1097
+																],
+																[
+																	1211,
+																	1097
+																],
+																[
+																	1211,
+																	1027
+																]
+															]
+														},
+														{
+															"area": "7. The Black King",
+															"points": [
+																[
+																	1234,
+																	724
+																],
+																[
+																	1234,
+																	800
+																],
+																[
+																	1297,
+																	800
+																],
+																[
+																	1297,
+																	724
+																]
+															]
+														},
+														{
+															"area": "6. Hall of Reason",
+															"points": [
+																[
+																	1425,
+																	493
+																],
+																[
+																	1425,
+																	564
+																],
+																[
+																	1486,
+																	564
+																],
+																[
+																	1486,
+																	493
+																]
+															]
+														},
+														{
+															"area": "6. Hall of Reason",
+															"points": [
+																[
+																	1364,
+																	705
+																],
+																[
+																	1364,
+																	796
+																],
+																[
+																	1448,
+																	796
+																],
+																[
+																	1448,
+																	705
+																]
+															]
+														}
+													],
+													"hrefThumbnail": {
+														"type": "internal",
+														"path": "book/TDCSR/thumbnail/Chapter3-WestruunMap.webp"
+													}
 												},
 												{
 													"type": "image",
@@ -4613,12 +5271,13 @@
 													"grid": {
 														"type": "none"
 													},
-													"mapName": "The City of Westruun (Player Version)",
+													"mapName": "Player Version",
 													"width": 2550,
 													"height": 1730,
 													"mapParent": {
 														"id": "2c9"
-													}
+													},
+													"credit": "{@link Kent Davis|https://artstation.com/idrawbagman}"
 												}
 											]
 										},
@@ -4799,7 +5458,7 @@
 						},
 						{
 							"type": "insetReadaloud",
-							"page": 81,
+							"page": 94,
 							"entries": [
 								{
 									"type": "list",
@@ -5393,7 +6052,7 @@
 										{
 											"type": "entries",
 											"name": "Halls of Splendor",
-											"page": 103,
+											"page": 104,
 											"entries": [
 												"The {@book League of Miracles|TDCSR|2|League of Miracles} is in the business of good first impressions. Though the Palace of Wonder is a secret to the people of Tal'Dorei, the spellwrights occasionally teleport particularly powerful mercenary mages to their home base in order to dazzle them with the castle's splendors. The palace's ground floor is made of a number of interconnected grand halls, awash in a tide of splendid, vibrant colors\u2014bordering on garish\u2014that crashes over all who enter.",
 												"These many grand dining, entertaining, and performance halls are gleaming spectacles of white marble, decorated by sparkling globes of magical light, and festooned with self-indulgent tapestries of the spellwrights' many dubious achievements. Any intruders here without the express permission of at least one spellwright will find themselves beset by a small army of {@creature animated armor|MM|animated armors} and other constructs\u2014including a {@creature platinum golem|TDCSR} that watches over the front entrance."
@@ -10688,6 +11347,296 @@
 				}
 			],
 			"id": "2c6"
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Exandria Created By",
+									"entries": [
+										"Matthew Mercer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Designers",
+									"entries": [
+										"James J. Haeck, Matthew Mercer, Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Design",
+									"entries": [
+										"John Stavropoulos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Contributions by Critical Role Cast",
+									"entries": [
+										"Laura Bailey, Taliesin Jaffe, Ashley Johnson, Liam O'Brien, Marisha Ray, Sam Riegel, Travis Willingham"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Additional Worldbuilding",
+									"entries": [
+										"Aabria Iyengar"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Managing Editor",
+									"entries": [
+										"Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Editors",
+									"entries": [
+										"Scott Fitzgerald Gray, Marcie Wood"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Proofreader",
+									"entries": [
+										"Matt Walloch-Key"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lore Keeper",
+									"entries": [
+										"Dani Carr"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cultural Consultant",
+									"entries": [
+										"Basheer Ghouse"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Safety Consultant",
+									"entries": [
+										"John Stavropoulos"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Accessibility Consultants",
+									"entries": [
+										"Accessible Games, Chris Hopper, Deven Rue"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Layout and Graphic Design",
+									"entries": [
+										"Christopher J. De La Rosa, Gordon McAlpin"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Art Directors",
+									"entries": [
+										"James J. Haeck, Hannah Rose"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Producers",
+									"entries": [
+										"James J. Haeck, Hannah Rose, Ivan Van Norman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cover Illustrator",
+									"entries": [
+										"Genel Jumalon"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lead Character Illustrator",
+									"entries": [
+										"Lauren Walsh"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Cartographer",
+									"entries": [
+										"Andy Law"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illustrators",
+									"entries": [
+										"Jonah Baumann, Elliott Berggren, Lea Bichlmaier, Hunter Bonyun, Allie Briggs, Conceptopolis, Clara Daly, Kent Davis, Nikki Dawes, Biagio D'Alessandro, Stanislav Dikolenko, Isabel Gibney, Anna Grinenko, John Anthony di Giovanni, Wesley Griffith, Ilich Henriquez, Claudia Ianniciello, Genel Jumalon, Linda Lithén, Adrián Ibarra Lugo, Nguyen Hieu, Jessica Nguyen, Ariana Orner, Svetoslav Petrov, Kennef Riggles, Aaron J. Riley, Caio Santos, Jessica Scates, Elisa Serio, Ameera Sheikh, Cyarna Trim, Andrey Vasilchenko, Lauren Walsh, Azra Wheeler, Zuzanna Wuzyk"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Digital Edition Alt Text",
+									"entries": [
+										"Mysty Vander"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Head of Darrington Press",
+									"entries": [
+										"Ivan Van Norman"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Creative Director",
+									"entries": [
+										"Matthew Mercer"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Head of Business Development",
+									"entries": [
+										"Ben Van Der Fluit"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Marketing Manager",
+									"entries": [
+										"Darcy L. Ross"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Playtest Coordinator",
+									"entries": [
+										"Christina Farber"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Director of Retail Partnerships",
+									"entries": [
+										"Brittany Walloch-Key"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Thanks",
+									"entries": [
+										"CritRoleStats, Ajit George, James Introcaso, Arthur Loftis, Sadie Lowry, F. Wesley Schneider"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Playtesters",
+									"entries": [
+										"Michelle Nguyen Bradley, Dani Carr, Adrienne Cho, Shaunette DeTie, Dominique Dickey, Christina Farber, Matthew Gilbert, Mark Hulmes, LaTia Jacquise, Taliesin Jaffe, Matt Walloch-Key, Christopher Lockey, Sadie Lowry, Carlos Luna, Surena Marie, Stevie Morley, Caroline Pitt, Darcy L. Ross, Kyle Shire, Lauren Walsh, Marcie Wood, Critical Role Community"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Critical Role Team",
+									"entries": [
+										"Stephanie Benjamin, Diana Jeanne Calalo, Sarah Marie Campbell, Dani Carr, Niki Chi, Adrienne Cho, Shaunette DeTie, Nadia Dilbert, Steve Failows, Christina Farber, Maxwell James, Will Lamborn, Sarah Leeper, Tal Levitas, Christopher Lockey, Ed Lopez, Surena Marie, Aaron Monroy, Khoa Nguyen, Jeremiah Rivas, Rachel Romero, Max Schapiro, Vinnie Singh, Kyle Shire, Spenser Starke, Jordyn Torrence"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "First Edition Credits",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Publisher",
+													"entries": [
+														"Green Ronin Publishing"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Writing and Design",
+													"entries": [
+														"Matthew Mercer and James Haeck"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Additional Development",
+													"entries": [
+														"Joseph Carriker and Steve Kenson"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Editing",
+													"entries": [
+														"Jennifer Lawrence and Evan Sass"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Proofreading",
+													"entries": [
+														"Caroline Pitt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Direction and Graphic Design",
+													"entries": [
+														"Hal Mangold"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/TDCSR/credits.webp"
+					},
+					"width": 850,
+					"height": 1119
+				}
+			]
 		}
 	]
 }

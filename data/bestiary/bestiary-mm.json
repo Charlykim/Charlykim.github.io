@@ -142,6 +142,18 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -525,6 +537,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -567,6 +585,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The acolyte has following cleric spells prepared:"
 					],
@@ -944,6 +963,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -2101,6 +2123,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -3034,6 +3062,9 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -3985,6 +4016,12 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -5105,6 +5142,9 @@
 			"otherSources": [
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -5721,6 +5761,14 @@
 			"source": "MM",
 			"page": 113,
 			"srd": true,
+			"otherSources": [
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
+				}
+			],
 			"size": [
 				"G"
 			],
@@ -6336,6 +6384,9 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -6615,6 +6666,11 @@
 			"source": "MM",
 			"page": 116,
 			"srd": true,
+			"otherSources": [
+				{
+					"source": "SatO"
+				}
+			],
 			"size": [
 				"G"
 			],
@@ -7215,6 +7271,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -7286,6 +7345,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:"
 					],
@@ -7347,7 +7407,7 @@
 				{
 					"name": "Inscrutable",
 					"entries": [
-						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom ({@skill Insight}) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
 					]
 				},
 				{
@@ -7537,6 +7597,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -7664,6 +7733,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -7946,6 +8018,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -8029,6 +8110,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The arcanaloth's innate spellcasting ability is Charisma (spell save {@dc 15}). The arcanaloth can innately cast the following spells, requiring no material components:"
 					],
@@ -8043,6 +8125,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The arcanaloth is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The arcanaloth has the following wizard spells prepared:"
 					],
@@ -8279,6 +8362,21 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -8345,6 +8443,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archmage can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
 					],
@@ -8587,6 +8686,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -8749,6 +8860,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -9024,6 +9138,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -9310,6 +9427,12 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -9563,6 +9686,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -9730,6 +9865,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -9887,6 +10034,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -10059,6 +10212,9 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -10249,6 +10405,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -10318,6 +10483,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The barlgura's spellcasting ability is Wisdom (spell save {@dc 13}). The barlgura can innately cast the following spells, requiring no material components:"
 					],
@@ -10446,6 +10612,9 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -10551,6 +10720,9 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -10647,6 +10819,12 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -10752,7 +10930,7 @@
 				{
 					"name": "Glaive",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				}
 			],
@@ -10831,6 +11009,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -10990,6 +11177,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -11293,6 +11492,9 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -11493,6 +11695,18 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -11612,6 +11826,12 @@
 				},
 				{
 					"source": "IMR"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -11936,6 +12156,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -12066,6 +12295,12 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -12463,6 +12698,12 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -12555,7 +12796,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Blue Slaad (Control Gem)",
@@ -12732,6 +12973,12 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -12979,6 +13226,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The naga is a 5th-level spellcaster (spell save {@dc 12}, {@hit 4} to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Wisdom, and it has the following cleric spells prepared:"
 					],
@@ -13067,6 +13315,9 @@
 			"otherSources": [
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -13118,6 +13369,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The naga is a 5th-level spellcaster (spell save {@dc 12}, {@hit 4} to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Intelligence, and it has the following wizard spells prepared:"
 					],
@@ -13674,6 +13926,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -13813,6 +14068,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -14261,7 +14525,7 @@
 				{
 					"name": "Swamp Camouflage",
 					"entries": [
-						"The bullywug has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+						"The bullywug has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
 					]
 				},
 				{
@@ -14346,6 +14610,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -14420,6 +14687,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The cambion's spellcasting ability is Charisma (spell save {@dc 14}). The cambion can innately cast the following spells, requiring no material components:"
 					],
@@ -14728,6 +14996,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -14877,6 +15148,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -15193,6 +15467,12 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -15528,6 +15808,9 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -15661,6 +15944,12 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -15810,6 +16099,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -15977,6 +16272,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -16138,6 +16439,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -16199,6 +16503,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
 					],
@@ -16508,6 +16813,30 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "HFStCM"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -16906,6 +17235,9 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -16970,6 +17302,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
 					],
@@ -17211,6 +17544,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -17486,6 +17822,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -17538,6 +17886,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The fanatic has the following cleric spells prepared:"
 					],
@@ -17712,6 +18061,24 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -17841,6 +18208,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -17967,6 +18337,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -18019,6 +18392,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dao's innate spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -18340,6 +18714,9 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -18454,6 +18831,15 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -18512,6 +18898,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The death knight is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
 					],
@@ -18749,6 +19136,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The slaad can innately cast the following spells, requiring no material components:"
 					],
@@ -18834,7 +19222,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Death Slaad (Control Gem)",
@@ -18910,6 +19298,15 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -19147,6 +19544,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -19201,6 +19601,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The gnome's innate spellcasting ability is Intelligence (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -19221,7 +19622,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The gnome has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The gnome has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				},
 				{
@@ -19377,6 +19778,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -19637,6 +20041,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -19706,6 +20122,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The deva's spellcasting ability is Charisma (spell save {@dc 17}). The deva can innately cast the following spells, requiring only verbal components:"
 					],
@@ -19822,6 +20239,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -19932,6 +20355,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -20045,6 +20474,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -20097,6 +20532,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The djinni's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -20331,6 +20767,24 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -20468,6 +20922,12 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -20702,6 +21162,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -20827,6 +21293,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -20875,6 +21344,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drider's innate spellcasting ability is Wisdom (spell save {@dc 13}). The drider can innately cast the following spells, requiring no material components:"
 					],
@@ -21097,6 +21567,12 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -21149,6 +21625,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -21322,6 +21799,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -21380,6 +21860,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -21635,6 +22116,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -21652,6 +22134,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The drow has the following wizard spells prepared:"
 					],
@@ -21856,6 +22339,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow's spellcasting ability is Charisma (spell save {@dc 15}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -21873,6 +22357,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The drow is a 10th-level spellcaster. Her spellcasting ability is Wisdom (save {@dc 14}, {@hit 6} to hit with spell attacks). The drow has the following cleric spells prepared:"
 					],
@@ -22111,6 +22596,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -22159,6 +22653,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
 					],
@@ -22290,6 +22785,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -22336,6 +22843,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dryad's innate spellcasting ability is Charisma (spell save {@dc 14}). The dryad can innately cast the following spells, requiring no material components:"
 					],
@@ -22604,6 +23112,9 @@
 			"otherSources": [
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -22744,6 +23255,15 @@
 				},
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -22796,6 +23316,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell sleep}, requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -22896,6 +23417,9 @@
 			"otherSources": [
 				{
 					"source": "CM"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -22995,6 +23519,12 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -23150,6 +23680,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -23201,6 +23737,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The efreeti's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -23381,6 +23918,12 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -23569,6 +24112,15 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -23651,6 +24203,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The empyrean's innate spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -23796,6 +24349,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -24037,6 +24596,12 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -24201,6 +24766,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -24359,6 +24927,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -24526,6 +25095,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -24687,6 +25257,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -24850,6 +25421,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -25010,6 +25582,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -25128,6 +25701,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -25172,6 +25748,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -25336,6 +25913,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
 					],
@@ -25488,6 +26066,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -25644,6 +26228,15 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "HFStCM"
 				}
 			],
 			"size": [
@@ -25963,6 +26556,15 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -26026,6 +26628,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:"
 					],
@@ -26185,6 +26788,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -26244,7 +26850,7 @@
 					"name": "Berserk",
 					"entries": [
 						"Whenever the golem starts its turn with 40 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
-						"The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again."
+						"The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma ({@skill Persuasion}) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again."
 					]
 				},
 				{
@@ -26331,6 +26937,12 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -26591,6 +27203,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -26710,6 +27328,15 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -26929,6 +27556,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -27072,6 +27702,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -27241,6 +27874,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -27429,7 +28068,7 @@
 				{
 					"name": "Eerie Resemblance",
 					"entries": [
-						"The gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful {@dc 15} Intelligence (Nature) check."
+						"The gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful {@dc 15} Intelligence ({@skill Nature}) check."
 					]
 				}
 			],
@@ -27493,6 +28132,12 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -27544,7 +28189,7 @@
 				{
 					"name": "Transparent",
 					"entries": [
-						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@quickref Surprise|PHB|3|0|surprised} by the cube."
+						"Even when the cube is in plain sight, it takes a successful {@dc 15} Wisdom ({@skill Perception}) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is {@quickref Surprise|PHB|3|0|surprised} by the cube."
 					]
 				}
 			],
@@ -27822,6 +28467,24 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -28034,6 +28697,27 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -28137,6 +28821,9 @@
 			"otherSources": [
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -28221,6 +28908,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -28423,6 +29113,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -28628,6 +29321,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -28840,6 +29536,15 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -28947,6 +29652,12 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -29735,6 +30446,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -29854,6 +30568,9 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -29975,6 +30692,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -30084,6 +30804,12 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -30590,6 +31316,15 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31272,6 +32007,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -31383,6 +32127,18 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31432,6 +32188,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki's innate spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
@@ -31509,6 +32266,18 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31558,6 +32327,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:"
 					],
@@ -31621,6 +32391,11 @@
 			"name": "Githzerai Monk",
 			"source": "MM",
 			"page": 161,
+			"otherSources": [
+				{
+					"source": "SatO"
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -31668,6 +32443,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:"
 					],
@@ -31739,6 +32515,12 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -31789,6 +32571,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:"
 					],
@@ -31887,6 +32670,15 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -31961,6 +32753,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The glabrezu's spellcasting ability is Intelligence (spell save {@dc 16}). The glabrezu can innately cast the following spells, requiring no material components:"
 					],
@@ -32110,6 +32903,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -32269,6 +33071,18 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -32389,6 +33203,15 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -32518,6 +33341,12 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -32679,6 +33508,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -32812,6 +33644,21 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -32955,6 +33802,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -33086,6 +33936,11 @@
 			"source": "MM",
 			"page": 115,
 			"srd": true,
+			"otherSources": [
+				{
+					"source": "BMT"
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -33330,6 +34185,12 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -33439,6 +34300,11 @@
 			"name": "Goristro",
 			"source": "MM",
 			"page": 59,
+			"otherSources": [
+				{
+					"source": "SatO"
+				}
+			],
 			"size": [
 				"H"
 			],
@@ -33621,6 +34487,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -33778,6 +34647,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -33838,6 +34716,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 14}). The slaad can innately cast the following spells, requiring no material components:"
 					],
@@ -33922,7 +34801,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Gray Slaad (Control Gem)",
@@ -34220,6 +35099,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -34273,6 +35158,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hag's innate spellcasting ability is Charisma (spell save {@dc 12}). She can innately cast the following spells, requiring no material components:"
 					],
@@ -34294,7 +35180,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom (Insight) check."
+						"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -34309,7 +35195,7 @@
 					"name": "Illusory Appearance",
 					"entries": [
 						"The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.",
-						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence (Investigation) check to discern that the hag is disguised."
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence ({@skill Investigation}) check to discern that the hag is disguised."
 					]
 				},
 				{
@@ -34525,6 +35411,15 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -34585,6 +35480,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 12}). The slaad can innately cast the following spells, requiring no material components:"
 					],
@@ -34665,7 +35561,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Green Slaad (Control Gem)",
@@ -34749,6 +35645,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -34887,6 +35789,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -34938,7 +35843,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grick has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -34970,6 +35875,12 @@
 				"type": "internal",
 				"path": "bestiary/grick.mp3"
 			},
+			"altArt": [
+				{
+					"name": "Crystal Grick",
+					"source": "PaBTSO"
+				}
+			],
 			"senseTags": [
 				"D"
 			],
@@ -35001,6 +35912,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -35052,7 +35966,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grick has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -35146,6 +36060,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -35247,6 +36164,12 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -35310,7 +36233,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The grimlock has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -35419,6 +36342,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -35514,6 +36449,12 @@
 				},
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -35571,6 +36512,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:"
 					],
@@ -35783,6 +36725,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:"
 					],
@@ -35839,7 +36782,7 @@
 				{
 					"name": "Inscrutable",
 					"entries": [
-						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
+						"The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom ({@skill Insight}) checks made to ascertain the sphinx's intentions or sincerity have disadvantage."
 					]
 				},
 				{
@@ -36223,6 +37166,12 @@
 				},
 				{
 					"source": "DoSI"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -36460,6 +37409,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "HFStCM"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -36607,6 +37568,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -36761,6 +37728,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -36941,6 +37911,9 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -37206,6 +38179,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -37466,6 +38442,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -37635,6 +38614,15 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -37743,6 +38731,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -37856,6 +38847,12 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -37957,7 +38954,7 @@
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -38045,6 +39042,9 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -38172,6 +39172,15 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -38292,6 +39301,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -38371,6 +39383,9 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -38647,6 +39662,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell fog cloud}, requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -38777,6 +39793,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -38965,6 +39993,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -39127,6 +40161,9 @@
 				},
 				{
 					"source": "ERLW"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -39300,6 +40337,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -39451,6 +40494,15 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -39855,6 +40907,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -39906,7 +40961,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom (Insight) check."
+						"The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -40134,6 +41189,18 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -40291,6 +41358,9 @@
 				},
 				{
 					"source": "DoSI"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -40420,6 +41490,15 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -40653,6 +41732,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -40860,6 +41942,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The kuo-toa is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The kuo-toa has the following cleric spells prepared:"
 					],
@@ -41217,6 +42300,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The kuo-toa has the following cleric spells prepared:"
 					],
@@ -41393,6 +42477,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lamia's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components."
 					],
@@ -41612,6 +42697,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -41694,6 +42788,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). The lich has the following wizard spells prepared:"
 					],
@@ -42411,6 +43506,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -42600,6 +43698,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Lizardfolk Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The lizardfolk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The lizardfolk has the following druid spells prepared:"
 					],
@@ -42805,6 +43904,27 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -42856,6 +43976,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
 					],
@@ -43010,6 +44131,9 @@
 				},
 				{
 					"source": "SjA"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -43062,6 +44186,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell heat metal} (spell save {@dc 10}), requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -43180,6 +44305,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -43400,6 +44528,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -43528,6 +44659,15 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -43665,6 +44805,12 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -43720,6 +44866,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The marid's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -43937,6 +45084,9 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -44150,6 +45300,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -44247,7 +45403,7 @@
 					"source": "IMR"
 				},
 				{
-					"source": "MOT"
+					"source": "CM"
 				}
 			],
 			"size": [
@@ -44507,6 +45663,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -44634,6 +45793,12 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -44708,6 +45873,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mezzoloth's innate spellcasting ability is Charisma (spell save {@dc 11}). The mezzoloth can innately cast the following spells, requiring no material components:"
 					],
@@ -44876,6 +46042,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -45032,6 +46207,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -45089,6 +46276,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mind flayer's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
 					],
@@ -45195,6 +46383,9 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -45252,6 +46443,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mind flayer's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
 					],
@@ -45269,6 +46461,7 @@
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mind flayer is a 10th-level spellcaster. Its spellcasting ability is Intelligence (save {@dc 15}, {@hit 7} to hit with spell attacks). The mind flayer has the following wizard spells prepared:"
 					],
@@ -45448,6 +46641,9 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -45597,6 +46793,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -45725,6 +46924,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -46010,6 +47215,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -46115,6 +47323,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -46254,6 +47474,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -46332,6 +47558,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The mummy lord has the following cleric spells prepared:"
 					],
@@ -46541,6 +47768,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -46868,6 +48098,9 @@
 				},
 				{
 					"source": "DoSI"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -46969,6 +48202,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -47148,6 +48387,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DIP"
 				}
 			],
 			"size": [
@@ -47277,6 +48522,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -47347,6 +48604,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hag's innate spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
@@ -47617,6 +48875,15 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -47787,6 +49054,21 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -47916,6 +49198,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -47991,7 +49282,7 @@
 				{
 					"name": "Weird Insight",
 					"entries": [
-						"The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being {@condition charmed}."
+						"The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma ({@skill Deception}) check against the nothic's Wisdom ({@skill Insight}) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being {@condition charmed}."
 					]
 				}
 			],
@@ -48053,6 +49344,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -48130,6 +49430,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The nycaloth's innate spellcasting ability is Charisma. The nycaloth can innately cast the following spells, requiring no material components:"
 					],
@@ -48167,7 +49468,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -48285,6 +49586,18 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -48570,6 +49883,18 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -48693,6 +50018,12 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -48822,6 +50153,9 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -48877,6 +50211,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oni's innate spellcasting ability is Charisma (spell save {@dc 13}). The oni can innately cast the following spells, requiring no material components:"
 					],
@@ -49028,6 +50363,12 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -49217,6 +50558,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The orc is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The orc has the following cleric spells prepared:"
 					],
@@ -49651,6 +50993,15 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -49782,6 +51133,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -49917,6 +51274,15 @@
 				},
 				{
 					"source": "DoSI"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -50137,6 +51503,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -50227,6 +51599,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -50529,6 +51907,15 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -50652,6 +52039,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -50756,6 +52146,12 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -50829,6 +52225,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pit fiend's spellcasting ability is Charisma (spell save {@dc 21}). The pit fiend can innately cast the following spells, requiring no material components:"
 					],
@@ -50992,6 +52389,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -51031,6 +52437,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pixie's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring only its pixie dust as a component:"
 					],
@@ -51122,6 +52529,15 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -51191,6 +52607,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The planetar's spellcasting ability is Charisma (spell save {@dc 20}). The planetar can innately cast the following spells, requiring no material components:"
 					],
@@ -51614,6 +53031,9 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -51764,6 +53184,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -51892,6 +53315,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -51940,6 +53375,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The priest has the following cleric spells prepared:"
 					],
@@ -52058,6 +53494,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -52214,6 +53653,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -52311,6 +53753,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -52437,6 +53888,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -52582,6 +54039,9 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -52843,6 +54303,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Psionics)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The quaggoth's innate spellcasting ability is Wisdom (spell save {@dc 11}). The quaggoth can innately cast the following spells, requiring no components:"
 					],
@@ -52957,6 +54418,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -53136,6 +54603,9 @@
 				},
 				{
 					"source": "PSA"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -53302,6 +54772,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The rakshasa's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:"
 					],
@@ -53412,6 +54883,12 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -53538,7 +55015,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+						"The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom ({@skill Insight}) check."
 					]
 				}
 			],
@@ -53788,6 +55265,15 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -53882,7 +55368,7 @@
 						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
 						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
 						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"Someone who is proficient in Wisdom ({@skill Medicine}) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom ({@skill Medicine}) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
 					],
 					"_version": {
 						"name": "Red Slaad (Control Gem)",
@@ -54055,6 +55541,12 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -54185,6 +55677,15 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -54357,6 +55858,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -54465,6 +55969,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -54552,6 +56062,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -54681,6 +56194,18 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -54847,6 +56372,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -54970,6 +56498,9 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -55079,6 +56610,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -55188,6 +56725,9 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -55332,6 +56872,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -55534,6 +57077,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The sahuagin is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She has the following cleric spells prepared:"
 					],
@@ -55680,6 +57224,9 @@
 				},
 				{
 					"source": "GotSF"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -55830,6 +57377,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -56271,6 +57827,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -56422,6 +57987,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -56499,7 +58070,7 @@
 					"name": "Illusory Appearance",
 					"entries": [
 						"The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.",
-						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 16} Intelligence (Investigation) check to discern that the hag is disguised."
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 16} Intelligence ({@skill Investigation}) check to discern that the hag is disguised."
 					]
 				}
 			],
@@ -56793,6 +58364,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -56956,6 +58539,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -57134,6 +58726,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "HFStCM"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -57250,6 +58854,9 @@
 		},
 		{
 			"name": "Shield Guardian",
+			"alias": [
+				"Shield Golem"
+			],
 			"source": "MM",
 			"page": 271,
 			"srd": true,
@@ -57286,6 +58893,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -57419,6 +59035,9 @@
 				},
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -57772,6 +59391,27 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -57885,6 +59525,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -57991,6 +59637,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -58041,6 +59690,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell dancing lights}, requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -58148,6 +59798,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -58222,6 +59878,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The solar's spellcasting ability is Charisma (spell save {@dc 25}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -58401,6 +60058,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -58520,6 +60183,10 @@
 			},
 			"altArt": [
 				{
+					"name": "Forge of Spells Spectator",
+					"source": "PaBTSO"
+				},
+				{
 					"name": "Spectator",
 					"source": "RMBRE"
 				}
@@ -58622,6 +60289,21 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -59044,6 +60726,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -59100,6 +60785,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:"
 					],
@@ -59244,6 +60930,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -59420,6 +61112,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -59528,7 +61232,8 @@
 				"RW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Steam Mephit",
@@ -59550,6 +61255,12 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -59596,6 +61307,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell blur}, requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -59732,6 +61444,12 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -59825,6 +61543,9 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -59876,7 +61597,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The giant has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				}
 			],
@@ -60035,6 +61756,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -60185,6 +61918,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -60245,6 +61981,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -60402,6 +62139,15 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -60584,6 +62330,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -61186,6 +62935,9 @@
 				},
 				{
 					"source": "PSA"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -61319,6 +63071,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -61554,6 +63309,9 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -61796,6 +63554,12 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -62060,7 +63824,7 @@
 				{
 					"name": "Chameleon Carapace",
 					"entries": [
-						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity (Stealth) checks made to hide."
+						"The thri-kreen can change the color of its carapace to match the color and texture of its surroundings. As a result, it has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{
@@ -62297,6 +64061,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -62576,6 +64352,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -62829,6 +64614,9 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -62920,6 +64708,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -63068,6 +64859,18 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -63119,7 +64922,7 @@
 				{
 					"name": "Chameleon Skin",
 					"entries": [
-						"The troglodyte has advantage on Dexterity (Stealth) checks made to hide."
+						"The troglodyte has advantage on Dexterity ({@skill Stealth}) checks made to hide."
 					]
 				},
 				{
@@ -63243,6 +65046,12 @@
 				},
 				{
 					"source": "PSZ"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -63533,6 +65342,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DIP"
 				}
 			],
 			"size": [
@@ -63646,6 +65464,12 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -63821,6 +65645,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The ultroloth's innate spellcasting ability is Charisma (spell save {@dc 17}). The ultroloth can innately cast the following spells, requiring no material components:"
 					],
@@ -63989,6 +65814,15 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -64125,6 +65959,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -64173,6 +66010,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The unicorn's innate spellcasting ability is Charisma (spell save {@dc 14}). The unicorn can innately cast the following spells, requiring no components:"
 					],
@@ -64360,6 +66198,18 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -64607,6 +66457,12 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -64820,6 +66676,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The vampire has the following wizard spells prepared:"
 					],
@@ -65341,6 +67198,18 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -65466,6 +67335,12 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "DIP"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -65711,6 +67586,15 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -65895,6 +67779,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -66002,6 +67889,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -66226,6 +68116,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -66341,6 +68234,12 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -66506,6 +68405,12 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "LK"
 				}
 			],
 			"size": [
@@ -66628,6 +68533,9 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -66891,6 +68799,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -67081,6 +68992,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -67244,6 +69161,9 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -67453,6 +69373,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -67860,6 +69783,21 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -68055,6 +69993,18 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -68349,6 +70299,9 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -68410,7 +70363,7 @@
 				{
 					"name": "Snow Camouflage",
 					"entries": [
-						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+						"The wolf has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain."
 					]
 				}
 			],
@@ -68505,6 +70458,21 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "LK"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
 				}
 			],
 			"size": [
@@ -68615,6 +70583,12 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -68774,6 +70748,24 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -68936,6 +70928,12 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -69042,6 +71040,12 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -69106,7 +71110,7 @@
 				{
 					"name": "Stone Camouflage",
 					"entries": [
-						"The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+						"The xorn has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
 					]
 				},
 				{
@@ -69184,6 +71188,9 @@
 				},
 				{
 					"source": "LoX"
+				},
+				{
+					"source": "ToFW"
 				}
 			],
 			"size": [
@@ -69247,7 +71254,7 @@
 				{
 					"name": "Snow Camouflage",
 					"entries": [
-						"The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+						"The yeti has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain."
 					]
 				}
 			],
@@ -69320,6 +71327,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -69401,6 +71411,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yochlol's spellcasting ability is Charisma (spell save {@dc 14}). The yochlol can innately cast the following spells, requiring no material components:"
 					],
@@ -69553,6 +71564,9 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "LK"
 				}
 			],
 			"size": [
@@ -69786,6 +71800,9 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "LK"
 				}
 			],
 			"size": [
@@ -70251,6 +72268,9 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -70496,6 +72516,9 @@
 			"otherSources": [
 				{
 					"source": "SKT"
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -70993,6 +73016,18 @@
 				},
 				{
 					"source": "RMBRE"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "LK"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -71242,6 +73277,15 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "LK"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -71451,6 +73495,11 @@
 			"name": "Young Red Shadow Dragon",
 			"source": "MM",
 			"page": 85,
+			"otherSources": [
+				{
+					"source": "AATM"
+				}
+			],
 			"size": [
 				"L"
 			],
@@ -72031,6 +74080,15 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "LK"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -72325,6 +74383,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Abomination Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 15}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -72522,6 +74581,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -72724,6 +74784,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -72909,6 +74970,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -73134,6 +75196,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -73305,6 +75368,30 @@
 				},
 				{
 					"source": "PSI"
+				},
+				{
+					"source": "HftT"
+				},
+				{
+					"source": "PaBTSO"
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "SatO"
+				},
+				{
+					"source": "ToFW"
+				},
+				{
+					"source": "BMT"
+				},
+				{
+					"source": "GHLoE"
+				},
+				{
+					"source": "DoDk"
 				}
 			],
 			"size": [
@@ -73371,6 +75458,12 @@
 				"type": "internal",
 				"path": "bestiary/zombie.mp3"
 			},
+			"altArt": [
+				{
+					"name": "Dwarf Zombie",
+					"source": "PaBTSO"
+				}
+			],
 			"traitTags": [
 				"Undead Fortitude"
 			],

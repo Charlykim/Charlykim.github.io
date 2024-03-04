@@ -30,6 +30,20 @@
 			}
 		},
 		{
+			"name": "Eldritch Adept",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/TCE/Eldritch Adept.webp"
+					},
+					"credit": "Brian Valeza"
+				}
+			]
+		},
+		{
 			"name": "Fury of the Frost Giant",
 			"source": "BGG",
 			"images": [
@@ -52,7 +66,8 @@
 						"type": "internal",
 						"path": "feats/DSotDQ/Mage of High Sorcery.webp"
 					},
-					"title": "Mages of High Sorcery of the Orders of the Black, Red, and White Robes"
+					"title": "Mages of High Sorcery of the Orders of the Black, Red, and White Robes",
+					"credit": "Linda Lithén"
 				}
 			]
 		},
@@ -66,6 +81,21 @@
 						"type": "internal",
 						"path": "feats/PHB/Inspiring Leader.webp"
 					}
+				}
+			]
+		},
+		{
+			"name": "Planar Wanderer",
+			"source": "SatO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/SatO/Planar Wanderer.webp"
+					},
+					"title": "A planar cartographer on a Lower Plane asks a pit fiend for directions",
+					"credit": "Michele Giorgi"
 				}
 			]
 		},
@@ -94,6 +124,21 @@
 					},
 					"title": "Servo",
 					"credit": "Igor Kieryluk"
+				}
+			]
+		},
+		{
+			"name": "Telepathic",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/TCE/Telepathic.webp"
+					},
+					"title": "Astride a unicorn, a telepathic bard inspires her wizard companion.",
+					"credit": "Zoltan Boros"
 				}
 			]
 		}

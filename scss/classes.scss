@@ -10,7 +10,8 @@
 		overflow: hidden;
 		max-height: 32px;
 		display: block;
-		word-spacing: 100vw;
+		width: min-content;
+		margin: 0 auto;
 	}
 
 	&btn-toggle-sidebar {
@@ -415,15 +416,6 @@
 		}
 	}
 
-	&feature-variant-brew-subclass {
-		.rd__h--0,
-		.rd__h--1,
-		.rd__h--2 {
-			color: $rgb-class-variant-brew--night;
-			border-bottom-color: $rgb-class-variant-brew--night;
-		}
-	}
-
 	&feature-subclass-reprint {
 		.rd__h--0,
 		.rd__h--1,
@@ -439,15 +431,6 @@
 		.rd__h--2 {
 			color: $rgb-subclass-ua--night-stale;
 			border-bottom-color: $rgb-subclass-ua--night-stale;
-		}
-	}
-
-	&feature-brew-subclass-reprint {
-		.rd__h--0,
-		.rd__h--1,
-		.rd__h--2 {
-			color: $rgb-class-variant-brew--night;
-			border-bottom-color: $rgb-class-variant-brew--night;
 		}
 	}
 
@@ -475,6 +458,24 @@
 		.rd__h--2 {
 			color: $rgb-class-brew--night;
 			border-bottom-color: $rgb-class-brew--night;
+		}
+	}
+
+	&feature-brew-subclass-reprint {
+		.rd__h--0,
+		.rd__h--1,
+		.rd__h--2 {
+			color: $rgb-class-variant-brew--night;
+			border-bottom-color: $rgb-class-variant-brew--night;
+		}
+	}
+
+	&feature-variant-brew-subclass {
+		.rd__h--0,
+		.rd__h--1,
+		.rd__h--2 {
+			color: $rgb-class-variant-brew--night;
+			border-bottom-color: $rgb-class-variant-brew--night;
 		}
 	}
 
@@ -802,20 +803,12 @@
 				color: $rgb-class-ua;
 			}
 
-			&--feature-variant-brew-subclass {
-				color: $rgb-class-variant-brew;
-			}
-
 			&--feature-subclass-reprint {
 				color: $rgb-subclass--stale;
 			}
 
 			&--feature-ua-subclass-reprint {
 				color: $rgb-subclass-ua--stale;
-			}
-
-			&--feature-brew-subclass-reprint {
-				color: $rgb-class-variant-brew;
 			}
 
 			&--feature-subclass {
@@ -828,6 +821,14 @@
 
 			&--feature-brew-subclass {
 				color: $rgb-class-brew;
+			}
+
+			&--feature-brew-subclass-reprint {
+				color: $rgb-class-variant-brew;
+			}
+
+			&--feature-variant-brew-subclass {
+				color: $rgb-class-variant-brew;
 			}
 
 			&--feature-variant {
@@ -899,10 +900,6 @@
 			color: $rgb-class-ua--night;
 		}
 
-		&--feature-variant-brew-subclass {
-			color: $rgb-class-variant-brew--night;
-		}
-
 		&--feature-subclass-reprint {
 			color: $rgb-subclass--night-stale;
 		}
@@ -933,6 +930,10 @@
 
 		&--feature-brew-subclass-reprint {
 			color: $rgb-class-variant-brew;
+		}
+
+		&--feature-variant-brew-subclass {
+			color: $rgb-class-variant-brew--night;
 		}
 
 		&--feature-variant {

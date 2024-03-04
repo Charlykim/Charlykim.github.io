@@ -54,8 +54,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -64,6 +64,12 @@
 			"page": 211,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 50
+				}
+			],
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -1086,6 +1092,12 @@
 			"page": 215,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 50
+				}
+			],
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -1529,6 +1541,12 @@
 			"page": 217,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 50
+				}
+			],
 			"level": 3,
 			"school": "A",
 			"time": [
@@ -1867,6 +1885,12 @@
 			"page": 219,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 50
+				}
+			],
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -2135,6 +2159,12 @@
 			"page": 219,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 50
+				}
+			],
 			"level": 2,
 			"school": "I",
 			"time": [
@@ -2224,6 +2254,12 @@
 			"page": 220,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 51
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -2441,8 +2477,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -2451,6 +2487,12 @@
 			"page": 221,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 51
+				}
+			],
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -2986,6 +3028,12 @@
 			"page": 223,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 51
+				}
+			],
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -3231,6 +3279,12 @@
 			"page": 224,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 52
+				}
+			],
 			"level": 1,
 			"school": "D",
 			"time": [
@@ -4132,6 +4186,7 @@
 				"A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched."
 			],
 			"miscTags": [
+				"LGT",
 				"OBJ"
 			]
 		},
@@ -4804,6 +4859,12 @@
 			"page": 230,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 52
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -4866,6 +4927,12 @@
 			"page": 230,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 52
+				}
+			],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -4911,6 +4978,12 @@
 			"page": 230,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 52
+				}
+			],
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -5284,6 +5357,12 @@
 			"page": 231,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 52
+				}
+			],
 			"level": 1,
 			"school": "D",
 			"time": [
@@ -5635,6 +5714,12 @@
 			"page": 234,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 53
+				}
+			],
 			"level": 3,
 			"school": "A",
 			"time": [
@@ -6322,8 +6407,8 @@
 				"SCL"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -7118,6 +7203,12 @@
 			"source": "PHB",
 			"page": 239,
 			"srd": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 53
+				}
+			],
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -7643,6 +7734,12 @@
 			"page": 241,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 53
+				}
+			],
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -7817,6 +7914,12 @@
 			"page": 242,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 53
+				}
+			],
 			"level": 2,
 			"school": "C",
 			"time": [
@@ -7938,6 +8041,12 @@
 			"page": 243,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 3,
 			"school": "T",
 			"time": [
@@ -9075,6 +9184,12 @@
 			"page": 248,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 0,
 			"school": "D",
 			"time": [
@@ -9116,6 +9231,12 @@
 			"page": 248,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -9411,6 +9532,9 @@
 			],
 			"savingThrow": [
 				"charisma"
+			],
+			"miscTags": [
+				"LGT"
 			]
 		},
 		{
@@ -9622,6 +9746,12 @@
 			"page": 250,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -10044,6 +10174,12 @@
 			"page": 251,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -10380,6 +10516,12 @@
 			"page": 252,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 54
+				}
+			],
 			"level": 1,
 			"school": "D",
 			"time": [
@@ -10628,6 +10770,12 @@
 			"page": 253,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 55
+				}
+			],
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -10742,6 +10890,12 @@
 			"page": 254,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 55
+				}
+			],
 			"level": 2,
 			"school": "I",
 			"time": [
@@ -11004,6 +11158,12 @@
 			"page": 255,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 55
+				}
+			],
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -11092,6 +11252,12 @@
 			"page": 255,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 55
+				}
+			],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -11193,6 +11359,12 @@
 			"page": 255,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 56
+				}
+			],
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -11423,6 +11595,12 @@
 			"page": 256,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 56
+				}
+			],
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -11467,6 +11645,12 @@
 			"page": 256,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 56
+				}
+			],
 			"level": 0,
 			"school": "C",
 			"time": [
@@ -11641,6 +11825,12 @@
 			"page": 257,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 57
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -11684,8 +11874,8 @@
 				"SGT"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			],
 			"hasFluffImages": true
 		},
@@ -11968,6 +12158,12 @@
 			"page": 258,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 57
+				}
+			],
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -12579,6 +12775,12 @@
 			"page": 260,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 57
+				}
+			],
 			"level": 2,
 			"school": "C",
 			"time": [
@@ -13691,8 +13893,8 @@
 				"TP"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -13986,6 +14188,12 @@
 			"page": 267,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 57
+				}
+			],
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -14049,6 +14257,12 @@
 			"page": 267,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 57
+				}
+			],
 			"level": 0,
 			"school": "T",
 			"time": [
@@ -14318,6 +14532,7 @@
 				"wisdom"
 			],
 			"miscTags": [
+				"LGT",
 				"PRM",
 				"SGT"
 			],
@@ -14493,6 +14708,12 @@
 			"page": 270,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 3,
 			"school": "A",
 			"time": [
@@ -14834,6 +15055,12 @@
 			"page": 271,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -15233,6 +15460,12 @@
 			"page": 272,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 0,
 			"school": "A",
 			"time": [
@@ -15373,6 +15606,12 @@
 			"page": 272,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -15457,6 +15696,12 @@
 			"page": 272,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -15515,6 +15760,12 @@
 			"page": 272,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 58
+				}
+			],
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -15604,8 +15855,8 @@
 				"R"
 			],
 			"areaTags": [
-				"ST",
-				"MT"
+				"MT",
+				"ST"
 			]
 		},
 		{
@@ -16061,6 +16312,12 @@
 			"page": 275,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -16102,6 +16359,12 @@
 			"page": 275,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -16185,6 +16448,12 @@
 			"page": 275,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -16240,6 +16509,12 @@
 			"page": 275,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
 			"level": 2,
 			"school": "I",
 			"time": [
@@ -16386,6 +16661,12 @@
 			"page": 276,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -16554,8 +16835,8 @@
 				"MAC"
 			],
 			"areaTags": [
-				"MT",
-				"C"
+				"C",
+				"MT"
 			]
 		},
 		{
@@ -16752,6 +17033,12 @@
 			"page": 277,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 60
+				}
+			],
 			"level": 2,
 			"school": "T",
 			"time": [
@@ -16843,6 +17130,12 @@
 			"page": 278,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 60
+				}
+			],
 			"level": 3,
 			"school": "C",
 			"time": [
@@ -16906,6 +17199,12 @@
 			"page": 278,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 60
+				}
+			],
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -17237,6 +17536,12 @@
 			"page": 279,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 60
+				}
+			],
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -17860,6 +18165,7 @@
 				}
 			],
 			"miscTags": [
+				"OBJ",
 				"RO",
 				"SGT",
 				"TP"
@@ -17967,6 +18273,12 @@
 			"page": 282,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 61
+				}
+			],
 			"level": 0,
 			"school": "T",
 			"time": [
@@ -18121,6 +18433,12 @@
 			"page": 282,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 61
+				}
+			],
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -19030,6 +19348,12 @@
 			"page": 287,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 61
+				}
+			],
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -19173,6 +19497,12 @@
 			"page": 287,
 			"srd": true,
 			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 61
+				}
+			],
 			"level": 2,
 			"school": "C",
 			"time": [
@@ -19437,9 +19767,9 @@
 				"necrotic"
 			],
 			"miscTags": [
+				"ADV",
 				"HL",
-				"SGT",
-				"ADV"
+				"SGT"
 			]
 		},
 		{

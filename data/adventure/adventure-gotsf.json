@@ -2236,6 +2236,14 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/GotSF/thumbnail/000-map-0.01-star-forge.webp"
+											},
+											"grid": {
+												"type": "square",
+												"size": 180,
+												"offsetX": -7,
+												"offsetY": -2,
+												"scale": 3,
+												"distance": 10
 											}
 										},
 										{
@@ -2250,6 +2258,14 @@
 											"height": 5700,
 											"mapParent": {
 												"id": "03a"
+											},
+											"grid": {
+												"type": "square",
+												"size": 180,
+												"offsetX": -7,
+												"offsetY": -2,
+												"scale": 3,
+												"distance": 10
 											}
 										}
 									]
@@ -2476,6 +2492,96 @@
 								"{@creature Firbolg Wanderer|BGG}",
 								"{@creature Fire Giant Forgecaller|BGG}",
 								"{@creature Fire Giant of Evil Fire|BGG}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"columns": 2,
+					"items": [
+						{
+							"type": "item",
+							"name": "Designers",
+							"entries": [
+								"Patrick Renie, James Wyatt"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Art Director",
+							"entries": [
+								"Bree Heiss, Emi Tanji"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Editor",
+							"entries": [
+								"Janica Carter"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Graphic Designer",
+							"entries": [
+								"Trish Yochum"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Illustrators",
+							"entries": [
+								"Olivier Bernard, Dawn Carlos, Dyson Logos, Riccardo Moscatello"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Imaging Technicians",
+							"entries": [
+								"Daniel Corona, Kevin Yee"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Senior Producer",
+							"entries": [
+								"Dan Tovar"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Producer",
+							"entries": [
+								"Siera Bruggeman, Gabriel Waluconis"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Product Manager",
+							"entries": [
+								"Natalie Egan"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Beyond Product Managers",
+							"entries": [
+								"Patrick Backmann, Jeff Turriff"
+							]
+						},
+						{
+							"type": "item",
+							"name": "D&D Beyond Digital Design Team",
+							"entries": [
+								"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell, Sean Stoves"
 							]
 						}
 					]

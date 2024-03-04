@@ -16,7 +16,8 @@
 					},
 					"title": "The annual Magister's Masquerade is a night of magic and fun that third-year students will never forget",
 					"width": 1700,
-					"height": 2261
+					"height": 2261,
+					"credit": "Caroline Gariba"
 				},
 				{
 					"type": "section",
@@ -285,7 +286,8 @@
 							},
 							"title": "Dean Augusta Tullus",
 							"width": 1700,
-							"height": 1168
+							"height": 1168,
+							"credit": "Brian Sola"
 						},
 						"At the reception, the characters can catch up with other students and enjoy magical snacks. The event concludes with a student getting ill (see \"{@adventure One Too Many?|SCC-TMM|0|One Too Many?}\")\u2014foreshadowing events later in this adventure\u2014and disgruntled students demanding the characters face them in a magical contest (see \"{@adventure The Challenge|SCC-TMM|0|The Challenge}\"). This challenge works best if it comes from a character's Rival.",
 						{
@@ -557,7 +559,8 @@
 							},
 							"title": "Students sometimes sneak off to the Furygale Repository, a dangerous disposal site for failed magic, to duel away from prying eyes",
 							"width": 1700,
-							"height": 1275
+							"height": 1275,
+							"credit": "Tomasz Jedruszek"
 						},
 						{
 							"type": "entries",
@@ -595,7 +598,8 @@
 											},
 											"title": "Map 5.1: Furygale Repository",
 											"width": 3000,
-											"height": 4071
+											"height": 4071,
+											"credit": "Mike Schley"
 										},
 										{
 											"type": "list",
@@ -691,7 +695,8 @@
 									},
 									"title": "The magic of Furygale is erratic and dangerous. Students dueling there often get in over their heads",
 									"width": 1700,
-									"height": 1250
+									"height": 1250,
+									"credit": "Liiga Smilshkalne"
 								}
 							]
 						},
@@ -771,7 +776,8 @@
 									},
 									"title": "Lorehold professors often use relics they've unearthed in their lectures about magical objects",
 									"width": 1700,
-									"height": 1168
+									"height": 1168,
+									"credit": "Francisco Miyara"
 								}
 							]
 						},
@@ -898,7 +904,8 @@
 															},
 															"title": "Magic and style are on full display at a Strixhaven fashion show",
 															"width": 850,
-															"height": 1169
+															"height": 1169,
+															"credit": "Alessandra Pisano"
 														}
 													]
 												},
@@ -1218,7 +1225,8 @@
 													},
 													"title": "Those who visit Sedgemoor are bound to discover its wondrous inhabitants and hidden mysteries",
 													"width": 1700,
-													"height": 1330
+													"height": 1330,
+													"credit": "Lie Setiawan"
 												}
 											]
 										}
@@ -1392,7 +1400,8 @@
 									},
 									"title": "Whether learning magic or dance, Strixhaven students throw themselves into their studies with zeal",
 									"width": 850,
-									"height": 1170
+									"height": 1170,
+									"credit": "Marta Nael"
 								},
 								"The day of the dance classes, when the characters show up at the Rose Stage, read or paraphrase the following text:",
 								{
@@ -2103,7 +2112,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/094-map-5.2-kollema-hall.webp"
 													},
-													"id": "000"
+													"id": "000",
+													"credit": "Sean MacDonald"
 												},
 												{
 													"type": "image",
@@ -2124,7 +2134,8 @@
 													},
 													"mapParent": {
 														"id": "000"
-													}
+													},
+													"credit": "Sean MacDonald"
 												}
 											]
 										},
@@ -2550,7 +2561,8 @@
 									},
 									"title": "From spell mishaps to pigment storms, plenty could go wrong the day of the Magister's Masquerade",
 									"width": 1700,
-									"height": 1247
+									"height": 1247,
+									"credit": "Bayard Wu"
 								},
 								{
 									"type": "entries",
@@ -3294,7 +3306,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/096-map-5.3-lorehold-deans-wing.webp"
 													},
-													"id": "001"
+													"id": "001",
+													"credit": "Sean MacDonald"
 												},
 												{
 													"type": "image",
@@ -3314,7 +3327,8 @@
 													},
 													"mapParent": {
 														"id": "001"
-													}
+													},
+													"credit": "Sean MacDonald"
 												}
 											]
 										},
@@ -3452,7 +3466,8 @@
 															},
 															"title": "Ancient guardians defend the Deans' Wing from intruders",
 															"width": 1700,
-															"height": 1334
+															"height": 1334,
+															"credit": "Jokubas Uogintas"
 														}
 													]
 												}
@@ -3595,7 +3610,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/098-map-5.4-deans-repository.webp"
 													},
-													"id": "002"
+													"id": "002",
+													"credit": "Sean MacDonald"
 												},
 												{
 													"type": "image",
@@ -3615,7 +3631,8 @@
 													},
 													"mapParent": {
 														"id": "002"
-													}
+													},
+													"credit": "Sean MacDonald"
 												}
 											]
 										},
@@ -3782,7 +3799,8 @@
 									},
 									"title": "Students from different colleges working together are stronger than they would be alone\u2014a lesson often learned by year's end",
 									"width": 1700,
-									"height": 1148
+									"height": 1148,
+									"credit": "Sara Winters"
 								},
 								{
 									"type": "entries",
@@ -3814,6 +3832,308 @@
 							"entries": [
 								"With the adventure's end, each character advances to 8th level."
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designer",
+											"entries": [
+												"Amanda Hamon"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Lead Designers",
+											"entries": [
+												"Jeremy Crawford, James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Emi Tanji"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Bill Benham, Makenzie De Armas, Dan Dillon, Steve Kenson, T. Alexander Stangroom"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Designers",
+											"entries": [
+												"Sydney Adams, Taymoor Rehman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Michele Carter, Scott Fitzgerald Gray, Ianara Natividad, Christopher Perkins, F. Wesley Schneider"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cultural & Sensitivity Consultant",
+											"entries": [
+												"Tanya DePass"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Trystan Falcone, Emi Tanji, Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Hydro74, Magali Villeneuve"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographers",
+											"entries": [
+												"Francesca Baerald, Sean Macdonald, Mike Schley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Ovidio Cartagena, Taylor Ingvarsson, Kate Irwin, Thomas Jenkot, Zack Stella, Sarah Wassell"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Steve Argyle, Jinho Bae, Cristi Balanescu, Mike Bierek, Zoltan Boros, Alex Brock, Filip Burburan, Dmitry Burmak, Ekaterina Burmak, Paul Scott Canavan, Manuel Castañón, Jehan Choo, Billy Christian, Chris Cold, Justine Cruz, Alayna Danner, Jonas De Ro, Olga Drebas, Piotr Dura, Jesper Ejsing, Anna Fehr, Tony Foti, Caroline Gariba, Ilse Gort, Johan Grenier, Yeong-Hao Han, Josh Hass, Hydro74, Izzy, Tomasz Jedruszek, Jihun, Jason Kang, Igor Kieryluk, Mathias Kollros, Yigit Koroglu, Kekai Kotaki, Andrey Kuzinskiy, Luiza Laffitte, Lius Lasahido, Ryan Alexander Lee, Lie Setiawan, Daniel Ljunggren, Lindsey Look, Titus Lunter, Howard Lyon, Slawomir Maniak, Antonio José Manzanedo, Joseph Meehan, Viko Menezes, Robson Michel, Francisco Miyara, Scott Murphy, Marta Nael, Hector Ortiz, Adam Paquette, Alessandra Pisano, Steve Prescott, Chris Rahn, Jason Rainville, Andreas Rocha, Denman Rooke, Sean Sevestre, Liiga Smilshkalne, Bryan Sola, Craig J Spearing, Raymond Swanland, YW Tang, Viktor Titov, Jokubas Uogintas, Randy Vargas, Svetlin Velinov, Raoul Vitale, Johannes Voss, Sara Winters, Bayard Wu, Kieran Yanner, Andreas Zafiratos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Strixhaven World Designers",
+											"entries": [
+												"Doug Beyer (creative lead), Taylor Ingvarsson (art director), Jess Lanzillo (creative director), Meris Mullaley (creative producer), Fox Allison, Annie Sardelis, Emily Teng, Andrew Vallas, James Wyatt, Ari Zirulnik"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Design Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ari Levitch, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Art Director",
+													"entries": [
+														"Kate Irwin"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Marketing Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/SCC/credits.webp"
+					},
+					"maxWidth": 300,
+					"width": 850,
+					"height": 880
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits2.webp"
+							},
+							"title": "On the Cover: Three Strixhaven students find distractions from their studies in Magali Villeneuve's cover illustration. On the back, a harried Biblioplex assistant tries to tidy the mess.",
+							"width": 1200,
+							"height": 750
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Hydro74 shows off the Strixhaven star, a symbol of unity and magical fellowship. The sigils of each of Strixhaven's five colleges adorn the back cover.",
+							"width": 1200,
+							"height": 750
 						}
 					]
 				}

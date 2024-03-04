@@ -1,6 +1,19 @@
 "use strict";
 
 class PageFilterEquipment extends PageFilter {
+	static _MISC_FILTER_ITEMS = [
+		"Item Group",
+		"Bundle",
+		"SRD",
+		"Basic Rules",
+		"Legacy",
+		"Has Images",
+		"Has Info",
+		"Reprinted",
+		"Disadvantage on Stealth",
+		"Strength Requirement",
+	];
+
 	static _RE_FOUNDRY_ATTR = /(?:[-+*/]\s*)?@[a-z0-9.]+/gi;
 	static _RE_DAMAGE_DICE_JUNK = /[^-+*/0-9d]/gi;
 	static _RE_DAMAGE_DICE_D = /d/gi;
@@ -65,7 +78,7 @@ class PageFilterEquipment extends PageFilter {
 		this._damageDiceFilter = new Filter({header: "Weapon Damage Dice", items: ["1", "1d4", "1d6", "1d8", "1d10", "1d12", "2d6"], itemSortFn: (a, b) => PageFilterEquipment._sortDamageDice(a, b)});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
-			items: ["Item Group", "Bundle", "SRD", "Basic Rules", "Has Images", "Has Info", ...Object.values(Parser.ITEM_MISC_TAG_TO_FULL)],
+			items: [...PageFilterEquipment._MISC_FILTER_ITEMS, ...Object.values(Parser.ITEM_MISC_TAG_TO_FULL)],
 			isMiscFilter: true,
 		});
 		this._poisonTypeFilter = new Filter({header: "Poison Type", items: ["ingested", "injury", "inhaled", "contact"], displayFn: StrUtil.toTitleCase});
@@ -82,9 +95,13 @@ class PageFilterEquipment extends PageFilter {
 		if (item.packContents) item._fMisc.push("Bundle");
 		if (item.srd) item._fMisc.push("SRD");
 		if (item.basicRules) item._fMisc.push("Basic Rules");
-		if (item.hasFluff || item.fluff?.entries) item._fMisc.push("Has Info");
-		if (item.hasFluffImages || item.fluff?.images) item._fMisc.push("Has Images");
+		if (SourceUtil.isLegacySourceWotc(item.source)) item._fMisc.push("Legacy");
+		if (this._hasFluff(item)) item._fMisc.push("Has Info");
+		if (this._hasFluffImages(item)) item._fMisc.push("Has Images");
 		if (item.miscTags) item._fMisc.push(...item.miscTags.map(Parser.itemMiscTagToFull));
+		if (this._isReprinted({reprintedAs: item.reprintedAs, tag: "item", prop: "item", page: UrlUtil.PG_ITEMS})) item._fMisc.push("Reprinted");
+		if (item.stealth) item._fMisc.push("Disadvantage on Stealth");
+		if (item.strength != null) item._fMisc.push("Strength Requirement");
 
 		if (item.focus || item.name === "Thieves' Tools" || item.type === "INS" || item.type === "SCF" || item.type === "AT") {
 			item._fFocus = item.focus ? item.focus === true ? [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES] : [...item.focus] : [];
@@ -176,7 +193,15 @@ class PageFilterEquipment extends PageFilter {
 globalThis.PageFilterEquipment = PageFilterEquipment;
 
 class PageFilterItems extends PageFilterEquipment {
-	static _DEFAULT_HIDDEN_TYPES = new Set(["treasure", "futuristic", "modern", "renaissance"]);
+	static _DEFAULT_HIDDEN_TYPES = new Set([
+		Parser.ITEM_TYPE_JSON_TO_ABV["$"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$A"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$C"],
+		Parser.ITEM_TYPE_JSON_TO_ABV["$G"],
+		"futuristic",
+		"modern",
+		"renaissance",
+	]);
 	static _FILTER_BASE_ITEMS_ATTUNEMENT = ["Requires Attunement", "Requires Attunement By...", "Attunement Optional", VeCt.STR_NO_ATTUNEMENT];
 
 	// region static
@@ -277,7 +302,7 @@ class PageFilterItems extends PageFilterEquipment {
 			itemSortFn: null,
 		});
 		this._rechargeTypeFilter = new Filter({header: "Recharge Type", displayFn: Parser.itemRechargeToFull});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Proficiency", "Has Images", "Has Info", "Item Group", "Bundle", "Magic", "Mundane", "Sentient", "Speed Adjustment", "SRD", "Basic Rules"], isMiscFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Language", "Grants Proficiency", "Magic", "Mundane", "Sentient", "Speed Adjustment", ...PageFilterEquipment._MISC_FILTER_ITEMS], isMiscFilter: true});
 		this._baseSourceFilter = new SourceFilter({header: "Base Source", selFn: null});
 		this._baseItemFilter = new Filter({header: "Base Item", displayFn: this.constructor._getBaseItemDisplay.bind(this.constructor)});
 		this._optionalfeaturesFilter = new Filter({
@@ -307,6 +332,7 @@ class PageFilterItems extends PageFilterEquipment {
 		if (item.charges) item._fMisc.push("Charges");
 		if (item.sentient) item._fMisc.push("Sentient");
 		if (item.grantsProficiency) item._fMisc.push("Grants Proficiency");
+		if (item.grantsLanguage) item._fMisc.push("Grants Language");
 		if (item.critThreshold) item._fMisc.push("Expanded Critical Range");
 
 		const fBaseItemSelf = item._isBaseItem ? `${item.name}__${item.source}`.toLowerCase() : null;
@@ -476,7 +502,7 @@ class ModalFilterItems extends ModalFilter {
 
 			<div class="col-5 ${item._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${item._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${item.name}</div>
 			<div class="col-5">${type.uppercaseFirst()}</div>
-			<div class="col-1 ve-text-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}</div>
+			<div class="col-1 ve-flex-h-center ${Parser.sourceJsonToColor(item.source)} pr-0" title="${Parser.sourceJsonToFull(item.source)}" ${Parser.sourceJsonToStyle(item.source)}>${source}${Parser.sourceJsonToMarkerHtml(item.source)}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

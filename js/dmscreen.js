@@ -24,7 +24,10 @@ import {
 } from "./dmscreen/dmscreen-consts.js";
 import {DmMapper} from "./dmscreen/dmscreen-mapper.js";
 import {MoneyConverter} from "./dmscreen/dmscreen-moneyconverter.js";
-import {TIME_TRACKER_MOON_SPRITE_LOADER, TimeTracker} from "./dmscreen/dmscreen-timetracker.js";
+import {
+	TimerTrackerMoonSpriteLoader,
+	TimeTracker,
+} from "./dmscreen/dmscreen-timetracker.js";
 import {Counter} from "./dmscreen/dmscreen-counter.js";
 import {
 	PanelContentManager_InitiativeTracker,
@@ -177,7 +180,7 @@ class Board {
 		await ExcludeUtil.pInitialise();
 
 		await Promise.all([
-			TIME_TRACKER_MOON_SPRITE_LOADER,
+			TimerTrackerMoonSpriteLoader.pInit(),
 			this.pLoadIndex(),
 			adventureLoader.pInit(),
 			bookLoader.pInit(),

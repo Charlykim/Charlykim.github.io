@@ -470,6 +470,11 @@ class _DataLoaderDereferencer {
 // region Cache
 
 class _DataLoaderCache {
+	static _PARTITION_UNKNOWN = 0;
+	static _PARTITION_SITE = 1;
+	static _PARTITION_PRERELEASE = 2;
+	static _PARTITION_BREW = 3;
+
 	_cache = {};
 	_cacheSiteLists = {};
 	_cachePrereleaseLists = {};
@@ -511,36 +516,63 @@ class _DataLoaderCache {
 		if (ent === _DataLoaderConst.ENTITY_NULL) return;
 
 		// region Set site/prerelease/brew list cache
-		const sourceJson = Parser.sourceJsonToJson(sourceClean);
-		if (SourceUtil.isSiteSource(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cacheSiteLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
-			return;
-		}
+		switch (this._set_getPartition(ent)) {
+			case this.constructor._PARTITION_SITE: {
+				return this._set_addToPartition({
+					cache: this._cacheSiteLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
 
-		if (PrereleaseUtil.hasSourceJson(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cachePrereleaseLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
-			return;
-		}
+			case this.constructor._PARTITION_PRERELEASE: {
+				return this._set_addToPartition({
+					cache: this._cachePrereleaseLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
 
-		if (BrewUtil2.hasSourceJson(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cacheBrewLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
+			case this.constructor._PARTITION_BREW: {
+				return this._set_addToPartition({
+					cache: this._cacheBrewLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
+
+			// Skip by default
 		}
 		// endregion
+	}
+
+	_set_getPartition (ent) {
+		if (ent.adventure) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.adventure));
+		if (ent.book) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.book));
+
+		if (ent.__prop !== "item" || ent._category !== "Specific Variant") return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent));
+
+		// "Specific Variant" items have a dual source. For the purposes of partitioning:
+		//   - only items with both `baseitem` source and `magicvariant` source both "site" sources
+		//   - items which include any brew are treated as brew
+		//   - items which include any prerelease (and no brew) are treated as prerelease
+		const entitySource = SourceUtil.getEntitySource(ent);
+		const partitionBaseitem = this._set_getPartition_fromSource(entitySource);
+		const partitionMagicvariant = this._set_getPartition_fromSource(ent._baseSource ?? entitySource);
+
+		if (partitionBaseitem === partitionMagicvariant && partitionBaseitem === this.constructor._PARTITION_SITE) return this.constructor._PARTITION_SITE;
+		if (partitionBaseitem === this.constructor._PARTITION_BREW || partitionMagicvariant === this.constructor._PARTITION_BREW) return this.constructor._PARTITION_BREW;
+		return this.constructor._PARTITION_PRERELEASE;
+	}
+
+	_set_getPartition_fromSource (partitionSource) {
+		if (SourceUtil.isSiteSource(partitionSource)) return this.constructor._PARTITION_SITE;
+		if (PrereleaseUtil.hasSourceJson(partitionSource)) return this.constructor._PARTITION_PRERELEASE;
+		if (BrewUtil2.hasSourceJson(partitionSource)) return this.constructor._PARTITION_BREW;
+		return this.constructor._PARTITION_UNKNOWN;
 	}
 
 	_set_addToPartition ({cache, pageClean, hashClean, ent}) {
@@ -797,6 +829,14 @@ class _DataTypeLoaderFeatFluff extends _DataTypeLoaderSingleSource {
 	_filename = "fluff-feats.json";
 }
 
+class _DataTypeLoaderOptionalfeatureFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["optionalfeatureFluff"];
+	static PAGE = UrlUtil.PG_OPT_FEATURES;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-optionalfeatures.json";
+}
+
 class _DataTypeLoaderItemFluff extends _DataTypeLoaderSingleSource {
 	static PROPS = ["itemFluff"];
 	static PAGE = UrlUtil.PG_ITEMS;
@@ -859,6 +899,14 @@ class _DataTypeLoaderConditionDiseaseFluff extends _DataTypeLoaderSingleSource {
 	static IS_FLUFF = true;
 
 	_filename = "fluff-conditionsdiseases.json";
+}
+
+class _DataTypeLoaderTrapHazardFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["trapFluff", "hazardFluff"];
+	static PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-trapshazards.json";
 }
 
 class _DataTypeLoaderPredefined extends _DataTypeLoader {
@@ -1515,6 +1563,16 @@ class _DataTypeLoaderCustomBook extends _DataTypeLoaderCustomAdventureBook {
 	_filename = "books.json";
 }
 
+class _DataTypeLoaderCitation extends _DataTypeLoader {
+	static PROPS = ["citation"];
+
+	_getSiteIdent ({pageClean, sourceClean}) { return this.constructor.name; }
+
+	async _pGetSiteData ({pageClean, sourceClean}) {
+		return {citation: []};
+	}
+}
+
 // endregion
 
 /* -------------------------------------------- */
@@ -1645,11 +1703,13 @@ class DataLoader {
 		_DataTypeLoaderLegendaryGroup.register({fnRegister});
 		_DataTypeLoaderItemEntry.register({fnRegister});
 		_DataTypeLoaderItemMastery.register({fnRegister});
+		_DataTypeLoaderCitation.register({fnRegister});
 		// endregion
 
 		// region Fluff
 		_DataTypeLoaderBackgroundFluff.register({fnRegister});
 		_DataTypeLoaderFeatFluff.register({fnRegister});
+		_DataTypeLoaderOptionalfeatureFluff.register({fnRegister});
 		_DataTypeLoaderItemFluff.register({fnRegister});
 		_DataTypeLoaderRaceFluff.register({fnRegister});
 		_DataTypeLoaderLanguageFluff.register({fnRegister});
@@ -1659,6 +1719,7 @@ class DataLoader {
 		_DataTypeLoaderRecipeFluff.register({fnRegister});
 
 		_DataTypeLoaderConditionDiseaseFluff.register({fnRegister});
+		_DataTypeLoaderTrapHazardFluff.register({fnRegister});
 		// endregion
 	}
 
@@ -1946,7 +2007,7 @@ class DataLoader {
 
 		static _isPossibleSource ({parent, sourceClean}) { return parent._isPrereleaseSource({sourceClean}) && !Parser.SOURCE_JSON_TO_FULL[Parser.sourceJsonToJson(sourceClean)]; }
 		static _getBrewUtil () { return typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null; }
-		static _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(); }
+		static async _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(await PrereleaseUtil.pGetCustomUrl()); }
 	};
 
 	static _BrewPreloader = class extends this._PrereleaseBrewPreloader {
@@ -1957,7 +2018,7 @@ class DataLoader {
 
 		static _isPossibleSource ({parent, sourceClean}) { return !parent._isSiteSource({sourceClean}) && !parent._isPrereleaseSource({sourceClean}); }
 		static _getBrewUtil () { return typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null; }
-		static _pGetSourceIndex () { return DataUtil.brew.pLoadSourceIndex(); }
+		static async _pGetSourceIndex () { return DataUtil.brew.pLoadSourceIndex(await BrewUtil2.pGetCustomUrl()); }
 	};
 
 	static async _pCacheAndGet_getCacheMeta ({pageClean, sourceClean, dataLoader}) {
@@ -2057,7 +2118,7 @@ class DataLoader {
 		ent.__prop = ent.__prop || prop;
 
 		const page = this._PROP_TO_HASH_PAGE[prop];
-		const source = SourceUtil.getEntitySource(ent);
+		const source = SourceUtil.getEntitySource(ent); //
 		const hash = hashBuilder(ent);
 
 		const {page: propClean, source: sourceClean, hash: hashClean} = _DataLoaderInternalUtil.getCleanPageSourceHash({page: prop, source, hash});

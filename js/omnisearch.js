@@ -278,7 +278,7 @@ class Omnisearch {
 		}
 
 		if (!this._state.isShowBrew) {
-			results = results.filter(r => !r.doc.s || SourceUtil.isSiteSource(r.doc.s));
+			results = results.filter(r => !r.doc.s || !BrewUtil2.hasSourceJson(r.doc.s));
 		}
 
 		if (!this._state.isShowUa) {
@@ -317,7 +317,7 @@ class Omnisearch {
 	}
 
 	static _renderLink_getHoverString (category, url, src, {isFauxPage = false} = {}) {
-		return `onmouseover="Renderer.hover.pHandleLinkMouseOver(event, this)" onmouseleave="Renderer.hover.handleLinkMouseLeave(event, this)" onmousemove="Renderer.hover.handleLinkMouseMove(event, this)" data-vet-page="${UrlUtil.categoryToHoverPage(category).qq()}" data-vet-source="${src.qq()}" data-vet-hash="${url.qq()}" ${isFauxPage ? `data-vet-is-faux-page="true"` : ""} ${Renderer.hover.getPreventTouchString()}`;
+		return `onmouseover="Renderer.hover.pHandleLinkMouseOver(event, this)" onmouseleave="Renderer.hover.handleLinkMouseLeave(event, this)" onmousemove="Renderer.hover.handleLinkMouseMove(event, this)" ondragstart="Renderer.hover.handleLinkDragStart(event, this)" data-vet-page="${UrlUtil.categoryToHoverPage(category).qq()}" data-vet-source="${src.qq()}" data-vet-hash="${url.qq()}" ${isFauxPage ? `data-vet-is-faux-page="true"` : ""} ${Renderer.hover.getPreventTouchString()}`;
 	}
 
 	static $getResultLink (r) {
@@ -433,17 +433,20 @@ class Omnisearch {
 				? `<a href="${adventureBookSourceHref}">${ptPageInner}</a>`
 				: ptPageInner;
 
-			const ptSourceInner = source ? `<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)} title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>` : `<span></span>`;
+			const ptSourceInner = source
+				? `<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)} title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>`
+				: `<span></span>`;
 			const ptSource = ptPage || !adventureBookSourceHref
 				? ptSourceInner
 				: `<a href="${adventureBookSourceHref}">${ptSourceInner}</a>`;
 
 			$$`<div class="omni__row-result split-v-center stripe-odd">
 				${$link}
-				<div class="inline-block">
+				<div class="ve-flex-v-center">
 					${ptSource}
 					${isSrd ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document">[SRD]</span>` : ""}
-					${ptPage}
+					${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "omni__disp-source-marker"})}
+					${ptPage ? `<span class="omni__wrp-page small-caps">${ptPage}</span>` : ""}
 				</div>
 			</div>`.appendTo(this._dispSearchOutput);
 		}

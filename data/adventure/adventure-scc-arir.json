@@ -15,7 +15,8 @@
 					},
 					"title": "When the characters discover {@creature Murgaxor|SCC}'s deadly plan, they must spring into action",
 					"width": 1700,
-					"height": 2261
+					"height": 2261,
+					"credit": "Toni Foti"
 				},
 				{
 					"type": "section",
@@ -173,7 +174,8 @@
 									},
 									"title": "Fourth-year courses are the university's most challenging, and students often employ magical study techniques to get by",
 									"width": 1700,
-									"height": 1250
+									"height": 1250,
+									"credit": "Lie Setiawan"
 								}
 							]
 						}
@@ -353,7 +355,8 @@
 									},
 									"title": "Idyllic huts dot the bayou surrounding Witherbloom College's campus",
 									"width": 1700,
-									"height": 1387
+									"height": 1387,
+									"credit": "Piotr Dura"
 								},
 								{
 									"type": "entries",
@@ -710,7 +713,8 @@
 												"type": "internal",
 												"path": "book/SCC/thumbnail/103-map-6.1-the-detention-bog.webp"
 											},
-											"id": "000"
+											"id": "000",
+											"credit": "Mike Schley"
 										},
 										{
 											"type": "image",
@@ -730,7 +734,8 @@
 											},
 											"mapParent": {
 												"id": "000"
-											}
+											},
+											"credit": "Mike Schley"
 										}
 									]
 								},
@@ -788,7 +793,8 @@
 													},
 													"title": "When the Detention Bog isn't officially in use, students practice experimental magic here",
 													"width": 1700,
-													"height": 1280
+													"height": 1280,
+													"credit": "Jason Kang"
 												}
 											]
 										}
@@ -983,7 +989,8 @@
 											},
 											"title": "{@creature Murgaxor|SCC} Grenshel",
 											"width": 850,
-											"height": 1063
+											"height": 1063,
+											"credit": "Olga Drebas"
 										},
 										"A mean-spirited, egotistical spellcaster, {@creature Murgaxor|SCC} was censured repeatedly for disregarding safety protocols, hexing and cursing peers, and using harmful magic while on campus.",
 										"University officials believe {@creature Murgaxor|SCC} began his illicit experiments with life-draining magic shortly after he enrolled as a student.",
@@ -2752,7 +2759,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/106-map-6.2-fortress-badlands.webp"
 													},
-													"id": "001"
+													"id": "001",
+													"credit": "Mike Schley"
 												},
 												{
 													"type": "image",
@@ -2772,7 +2780,8 @@
 													},
 													"mapParent": {
 														"id": "001"
-													}
+													},
+													"credit": "Mike Schley"
 												}
 											]
 										},
@@ -3044,7 +3053,8 @@
 															},
 															"title": "Lorehold expeditions into the badlands sometimes awaken more than mere memories",
 															"width": 1700,
-															"height": 1106
+															"height": 1106,
+															"credit": "Jinho Bae"
 														}
 													]
 												}
@@ -3884,7 +3894,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/108-map-6.3-underground-cave.webp"
 													},
-													"id": "002"
+													"id": "002",
+													"credit": "Sean MacDonald"
 												},
 												{
 													"type": "image",
@@ -3904,7 +3915,8 @@
 													},
 													"mapParent": {
 														"id": "002"
-													}
+													},
+													"credit": "Sean MacDonald"
 												}
 											]
 										},
@@ -4112,7 +4124,8 @@
 											},
 											"title": "Adventurers never know what lurks within an ancient ruin",
 											"width": 850,
-											"height": 1224
+											"height": 1224,
+											"credit": "Yeong-Hao Han"
 										},
 										"This scene is the final opportunity for the characters to interact with their fellow students on campus before this adventure's climax and conclusion. As such, this Relationship encounter is more free-form than others.",
 										"Since this is the last such encounter before the adventure's finale, this scene should be of personal importance to each character. If a player wishes to cement a Beloved Relationship when they normally couldn't or gain a Friend even if they don't have enough Relationship Points, allow them to do so to reflect the poignant nature of this moment.",
@@ -4975,7 +4988,8 @@
 														"type": "internal",
 														"path": "book/SCC/thumbnail/110-map-6.4-ruins-of-caerdoon.webp"
 													},
-													"id": "003"
+													"id": "003",
+													"credit": "Mike Schley"
 												},
 												{
 													"type": "image",
@@ -4995,7 +5009,8 @@
 													},
 													"mapParent": {
 														"id": "003"
-													}
+													},
+													"credit": "Mike Schley"
 												}
 											]
 										},
@@ -5077,7 +5092,8 @@
 															},
 															"title": "The ruins near Strixhaven are watched over by strange creatures",
 															"width": 1700,
-															"height": 1303
+															"height": 1303,
+															"credit": "Antonio José Manzanedo"
 														}
 													]
 												}
@@ -5183,7 +5199,8 @@
 													},
 													"title": "Khelvor the daemogoth eagerly anticipates the suffering that will occur when {@creature Murgaxor|SCC}'s ritual is complete",
 													"width": 850,
-													"height": 1097
+													"height": 1097,
+													"credit": "Kieran Yanner"
 												},
 												{
 													"type": "insetReadaloud",
@@ -5294,7 +5311,8 @@
 									},
 									"title": "The Ruins of Caerdoon hold many remnants of ancient warfare",
 									"width": 1700,
-									"height": 1084
+									"height": 1084,
+									"credit": "Jokubas Uogintas"
 								}
 							]
 						},
@@ -5491,7 +5509,8 @@
 												"type": "internal",
 												"path": "book/SCC/thumbnail/114-map-6.5-fortress-of-caerdoon-basement.webp"
 											},
-											"id": "004"
+											"id": "004",
+											"credit": "Sean MacDonald"
 										},
 										{
 											"type": "image",
@@ -5511,7 +5530,8 @@
 											},
 											"mapParent": {
 												"id": "004"
-											}
+											},
+											"credit": "Sean MacDonald"
 										}
 									]
 								},
@@ -5767,7 +5787,8 @@
 									},
 									"title": "Strixhaven's faculty members celebrate the characters' victory over {@creature Murgaxor|SCC}",
 									"width": 1700,
-									"height": 1382
+									"height": 1382,
+									"credit": "Alayna Danner"
 								},
 								"If the characters stop {@creature Murgaxor|SCC}'s ritual, the mishaps plaguing Strixhaven University cease, and the corruption affecting Strixhaven's scholars vanishes. If {@creature Murgaxor|SCC} survives the ritual's premature end, the characters have a choice to make. They can take him back to Strixhaven to stand trial for his crimes, or they can administer justice themselves.",
 								"News of {@creature Murgaxor|SCC}'s defeat lifts the gloom on campus and restores its typically joyful atmosphere. Professor Sharpbeak tells the characters that the faculty plans to honor the heroes on their graduation day with a celebration attended by their Friends, Beloveds, and even Rivals. The faculty also offers each character a token of gratitude, in the form of a rare or uncommon magic item of the character's choice."
@@ -5781,6 +5802,308 @@
 							"entries": [
 								"If all the characters fall {@condition unconscious} or die in the final encounter, they fail to stop {@creature Murgaxor|SCC}'s ritual. Shortly afterward, the ritual deals 70 ({@dice 20d6}) necrotic damage to everyone on campus as {@creature Murgaxor|SCC} siphons their life force. Hundreds of scholars die, and many more are severely injured. {@creature Murgaxor|SCC} becomes immortal and one of the most powerful spellcasters in the world. If the characters survive, perhaps the Founder Dragons and the archaics can guide them as they attempt to stop {@creature Murgaxor|SCC} in a dystopian new world."
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Credits",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Lead Designer",
+											"entries": [
+												"Amanda Hamon"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Lead Designers",
+											"entries": [
+												"Jeremy Crawford, James Wyatt"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Art Director",
+											"entries": [
+												"Emi Tanji"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Designers",
+											"entries": [
+												"Bill Benham, Makenzie De Armas, Dan Dillon, Steve Kenson, T. Alexander Stangroom"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Assistant Designers",
+											"entries": [
+												"Sydney Adams, Taymoor Rehman"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Rules Developers",
+											"entries": [
+												"Jeremy Crawford, Ben Petrisor"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Editors",
+											"entries": [
+												"Judy Bauer, Michele Carter, Scott Fitzgerald Gray, Ianara Natividad, Christopher Perkins, F. Wesley Schneider"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cultural & Sensitivity Consultant",
+											"entries": [
+												"Tanya DePass"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Graphic Designers",
+											"entries": [
+												"Trystan Falcone, Emi Tanji, Trish Yochum"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cover Illustrators",
+											"entries": [
+												"Hydro74, Magali Villeneuve"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Cartographers",
+											"entries": [
+												"Francesca Baerald, Sean Macdonald, Mike Schley"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Additional Art Directors",
+											"entries": [
+												"Ovidio Cartagena, Taylor Ingvarsson, Kate Irwin, Thomas Jenkot, Zack Stella, Sarah Wassell"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Interior Illustrators",
+											"entries": [
+												"Steve Argyle, Jinho Bae, Cristi Balanescu, Mike Bierek, Zoltan Boros, Alex Brock, Filip Burburan, Dmitry Burmak, Ekaterina Burmak, Paul Scott Canavan, Manuel Castañón, Jehan Choo, Billy Christian, Chris Cold, Justine Cruz, Alayna Danner, Jonas De Ro, Olga Drebas, Piotr Dura, Jesper Ejsing, Anna Fehr, Tony Foti, Caroline Gariba, Ilse Gort, Johan Grenier, Yeong-Hao Han, Josh Hass, Hydro74, Izzy, Tomasz Jedruszek, Jihun, Jason Kang, Igor Kieryluk, Mathias Kollros, Yigit Koroglu, Kekai Kotaki, Andrey Kuzinskiy, Luiza Laffitte, Lius Lasahido, Ryan Alexander Lee, Lie Setiawan, Daniel Ljunggren, Lindsey Look, Titus Lunter, Howard Lyon, Slawomir Maniak, Antonio José Manzanedo, Joseph Meehan, Viko Menezes, Robson Michel, Francisco Miyara, Scott Murphy, Marta Nael, Hector Ortiz, Adam Paquette, Alessandra Pisano, Steve Prescott, Chris Rahn, Jason Rainville, Andreas Rocha, Denman Rooke, Sean Sevestre, Liiga Smilshkalne, Bryan Sola, Craig J Spearing, Raymond Swanland, YW Tang, Viktor Titov, Jokubas Uogintas, Randy Vargas, Svetlin Velinov, Raoul Vitale, Johannes Voss, Sara Winters, Bayard Wu, Kieran Yanner, Andreas Zafiratos"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Strixhaven World Designers",
+											"entries": [
+												"Doug Beyer (creative lead), Taylor Ingvarsson (art director), Jess Lanzillo (creative director), Meris Mullaley (creative producer), Fox Allison, Annie Sardelis, Emily Teng, Andrew Vallas, James Wyatt, Ari Zirulnik"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Project Engineer",
+											"entries": [
+												"Cynda Callaway"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Imaging Technicians",
+											"entries": [
+												"Kevin Yee"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Prepress Specialist",
+											"entries": [
+												"Jefferson Dunlap"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "D&D Studio",
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Game Design Architects",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Manager",
+													"entries": [
+														"Steve Scott"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Design Department",
+													"entries": [
+														"Sydney Adams, Judy Bauer, Makenzie De Armas, Dan Dillon, Amanda Hamon, Ari Levitch, Ben Petrisor, Taymoor Rehman, F. Wesley Schneider, James Wyatt"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department Manager",
+													"entries": [
+														"Richard Whitters"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Principal Art Director",
+													"entries": [
+														"Kate Irwin"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Art Department",
+													"entries": [
+														"Trystan Falcone, Emi Tanji, Shawn Wood, Trish Yochum"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Producer",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Producers",
+													"entries": [
+														"Bill Benham, Robert Hawkey, Lea Heleotis"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Product Management",
+													"entries": [
+														"Liz Schuh"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Product Managers",
+													"entries": [
+														"Natalie Egan, Chris Lindsay, Hilary Ross, Chris Tulach"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Marketing Executive Producer",
+													"entries": [
+														"Ray Winninger"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Director of Global Brand Marketing",
+													"entries": [
+														"Brian Perry"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Global Brand Manager",
+													"entries": [
+														"Shelly Mazzanoble"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Senior Marketing Communications Manager",
+													"entries": [
+														"Greg Tito"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Manager",
+													"entries": [
+														"Brandy Camel"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/SCC/credits.webp"
+					},
+					"maxWidth": 300,
+					"width": 850,
+					"height": 880
+				},
+				{
+					"type": "gallery",
+					"images": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits2.webp"
+							},
+							"title": "On the Cover: Three Strixhaven students find distractions from their studies in Magali Villeneuve's cover illustration. On the back, a harried Biblioplex assistant tries to tidy the mess.",
+							"width": 1200,
+							"height": 750
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/SCC/credits3.webp"
+							},
+							"title": "On the Alt-Cover: Hydro74 shows off the Strixhaven star, a symbol of unity and magical fellowship. The sigils of each of Strixhaven's five colleges adorn the back cover.",
+							"width": 1200,
+							"height": 750
 						}
 					]
 				}
